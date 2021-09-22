@@ -17,8 +17,8 @@ export const Sidebar = () => {
         {sidebar.map(({ id, icon, title, path, Icon}) => {
           return (
             <Item>
-                <Icon className="icon"/>
               <Link key={id} to={path}>
+                <Icon className="icon"/>
                 {title}
               </Link>
             </Item>

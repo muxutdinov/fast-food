@@ -61,9 +61,7 @@ export const Link = styled(NavLink)`
     height: 34px;
     padding: 10px;
     border-radius: 6px;
-    height: 36px;
-    width: 36px;
-    border-radius: 6px;
+    background: #F6F6F6;
   }
 `;
 export const Item = styled.div`
