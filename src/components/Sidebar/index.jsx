@@ -1,7 +1,18 @@
 import React from "react";
-import { Container, LogoWrapper, Text, Wrapper, Link, Item } from "./style";
+import {
+  Container,
+  activeStyle,
+  LogoWrapper,
+  Text,
+  Wrapper,
+  Link,
+  Item,
+  WrapperIcon,
+  ComWrap,
+} from "./style";
 import logo from "../../assets/imgs/logo.png";
 import { sidebar } from "../../utils/sidebar";
+import { ReactComponent as Chiqish } from "../../assets/icons/logout.svg";
 
 export const Sidebar = () => {
   return (
@@ -14,19 +25,28 @@ export const Sidebar = () => {
         </Text>
       </LogoWrapper>
       <Wrapper>
-        {sidebar.map(({ id, icon, title, path, Icon}) => {
+        {sidebar.map(({ id, title, path, Icon }) => {
           return (
             <Item>
-              <Link key={id} to={path}>
-                <Icon className="icon"/>
+              <Link exact key={id} to={path} activeStyle={activeStyle}>
+                <Icon className="icon" />
                 {title}
               </Link>
             </Item>
           );
         })}
       </Wrapper>
+      <Wrapper chiqish>
+        <ComWrap>
+          <WrapperIcon>
+            <Chiqish />
+          </WrapperIcon>
+        </ComWrap>
+        <Wrapper.Title>Chiqish</Wrapper.Title>
+      </Wrapper>
     </Container>
   );
 };
-export default Sidebar;
 
+
+export default Sidebar;
