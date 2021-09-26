@@ -1,6 +1,6 @@
 import React from "react";
-
+import Buyurt from '../../components/Buyurtmalar'
 export const Buyurtmalar = () => {
-  return <h1>Buyurtmalar</h1>;
+  return <Buyurt/>;
 };
 export default Buyurtmalar;

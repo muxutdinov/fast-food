@@ -5,7 +5,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 650px;
+  min-width: 200px;
+  height: 765px;
   padding: 18px 0 24px 0;
   background-color: white;
 `;
@@ -52,7 +53,7 @@ export const Wrapper = styled.div`
 export const Item = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 4px 4px 0;
+  margin: 0 14px 14px 0;
   height: 38px;
 `;
 export const Link = styled(NavLink)`
