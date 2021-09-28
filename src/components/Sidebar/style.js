@@ -15,13 +15,13 @@ export const Container = styled.div`
 export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 70px;
   margin-bottom: 44px;
   padding: 0 24px;
 `;
 LogoWrapper.Img = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   margin-right: 10px;
 `;
@@ -33,14 +33,14 @@ export const Text = styled.div`
 Text.Title = styled.div`
   font-weight: 900;
   font-family: SFProDisplay bold;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 15px;
   color: #2d3a45;
 `;
 
 Text.Desc = styled.div`
-  font-size: 8px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 12px;
   color: #2d3a45;
   mix-blend-mode: normal;
   opacity: 0.5;
@@ -70,12 +70,12 @@ export const Link = styled(NavLink)`
   border-radius: 0px 6px 6px 0px;
   .icon {
     margin-right: 15px;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     padding: 10px;
-    border-radius: 6px;
     background: #f6f6f6;
-    margin-left: 25px;
+    border-radius: 6px;
+    margin-left: 30px;
   }
   transition: all 0.2s;
 `;

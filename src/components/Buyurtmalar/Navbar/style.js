@@ -47,19 +47,21 @@ export const Wrapper = styled.div`
   
 `;
 export const Plus = styled(plus)`
-  padding: 11px;
-  height: 30px;
-  width: 30px;
-  font-size: 12px;
+   padding: 11px;
   background: #20d472;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   border-radius: 50%;
   cursor: pointer;
-  margin-right: 12px;
+  margin-right: 14px;
 `;
 
 export const Title = styled.pre`
+  font-weight: 900;
   font-family: SFProDisplay;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 16px;
   color: #2d3a45;
 `;
@@ -75,7 +77,7 @@ export const Tab = styled.div`
 `;
 
 Tab.Item = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   font-family: SFProDisplay;
@@ -90,7 +92,23 @@ Tab.Item = styled.div`
   box-shadow: ${({ active }) =>
     active && "0px 2px 2px rgba(174, 176, 181, 0.314986)"};
   border-radius: 18px;
-  height: 30px;
+  height: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: SFProDisplay;
+  font-size: 14px;
+  line-height: 16px;
+  width: 170px;
+  color: #9c9fa2;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: ${({ active }) => active && 'white'};
+  box-shadow: ${({ active }) =>
+    active && '0px 2px 2px rgba(174, 176, 181, 0.314986)'};
+  border-radius: 18px;
+  height: 28px;
 `;
 export const Toggle = styled.div`
   display: flex;

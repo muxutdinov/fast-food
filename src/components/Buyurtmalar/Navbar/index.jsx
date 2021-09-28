@@ -23,7 +23,7 @@ export const Navbar = () => {
     <Container>
       <Wrapper align order="first">
         <Plus />
-        <Title>Yangi buyurtma qo'shish</Title>
+        <Title>Yangi buyurtma <br/> qo'shish</Title>
       </Wrapper>
       <Wrapper order="second">
         <Tab>
