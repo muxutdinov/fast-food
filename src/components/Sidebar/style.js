@@ -9,6 +9,8 @@ export const Container = styled.div`
   height: 765px;
   padding: 18px 0 24px 0;
   background-color: white;
+  position: sticky;
+  top: 0;
 `;
 export const LogoWrapper = styled.div`
   display: flex;

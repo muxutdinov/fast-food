@@ -1,10 +1,40 @@
 import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 
-// import group from '../../../assets/icons/Group.svg'
+// const getOrder = ({ order }) => {
+//   switch (order) {
+//     case "first":
+//       return 1;
+//     case "second":
+//       return 3;
+//     case "third":
+//       return 2;
+//     default:
+//       return 1;
+//   }
+// };
+
+// const getFlex = ({ order }) => {
+//   switch (order) {
+//     case "first":
+//       return 1;
+//     case "second":
+//       return 3;
+//     case "third":
+//       return 2;
+//     default:
+//       return 1;
+//   }
+// };
 
 export const Container = styled.div`
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index:999;
+  /* @madia (max-width:1900px) {
+    flex-direction: column;
+  } */
 `;
 export const Wrapper = styled.div`
   padding: 22px 40px;
@@ -14,6 +44,7 @@ export const Wrapper = styled.div`
   align-items: center;
   width: ${({ align }) => (align ? "200px" : "100%")};
   border: 1px solid #e5e5e5;
+  
 `;
 export const Plus = styled(plus)`
   padding: 11px;
@@ -55,7 +86,7 @@ Tab.Item = styled.div`
   mix-blend-mode: normal;
   cursor: pointer;
   transition: all 0.3s;
-  background: ${({ active }) => active && "while"};
+  background: ${({ active }) => active && "white"};
   box-shadow: ${({ active }) =>
     active && "0px 2px 2px rgba(174, 176, 181, 0.314986)"};
   border-radius: 18px;
@@ -72,15 +103,15 @@ export const Toggle = styled.div`
 `;
 
 export const Menu = styled.img`
- width: 12px;
- height: 12px;
- margin-left: 9px;
- margin-top: ${({one})=>one?"4px":""};
+  width: 12px;
+  height: 12px;
+  margin-left: 9px;
+  margin-top: ${({ one }) => (one ? "4px" : "")};
 `;
 
 export const Group = styled.img`
- width: 14px;
- height: 14px;
+  width: 14px;
+  height: 14px;
 `;
 
 export const IconWraptwo = styled.div`
@@ -88,13 +119,13 @@ export const IconWraptwo = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: ${({active})=>active ? "white" : "transperant"};
+  background: ${({ active }) => (active ? "white" : "transperant")};
   height: 30px;
   width: 30px;
   font-size: 12px;
   border-radius: 50%;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 `;
 export const IconWrapone = styled.div`
   display: flex;
@@ -102,8 +133,8 @@ export const IconWrapone = styled.div`
   height: 30px;
   width: 30px;
   font-size: 12px;
-  background: ${({active})=>active ? "white" : "transperant"};
+  background: ${({ active }) => (active ? "white" : "transperant")};
   border-radius: 50%;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 `;

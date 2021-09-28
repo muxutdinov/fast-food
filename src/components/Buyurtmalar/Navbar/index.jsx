@@ -17,15 +17,15 @@ import {
 } from "./style";
 
 export const Navbar = () => {
-  const [isActive, setIsActive] = useState("yangi");
+  const [isActive, setIsActive] = useState("Yangi");
   const [isTabActive, setIsTabActive] = useState(true);
   return (
     <Container>
-      <Wrapper align test>
+      <Wrapper align order="first">
         <Plus />
         <Title>Yangi buyurtma qo'shish</Title>
       </Wrapper>
-      <Wrapper>
+      <Wrapper order="second">
         <Tab>
           <Tab.Item
             onClick={() => setIsActive("Yangi")}
@@ -40,20 +40,20 @@ export const Navbar = () => {
             Qabul qilingan
           </Tab.Item>
           <Tab.Item
-            onClick={() => setIsActive("Jo'natilgan")}
             active={isActive === "Jo'natilgan"}
+            onClick={() => setIsActive("Jo'natilgan")}
           >
             Jo'natilgan
           </Tab.Item>
           <Tab.Item
-            onClick={() => setIsActive("Yopilgan")}
             active={isActive === "Yopilgan"}
+            onClick={() => setIsActive("Yopilgan")}
           >
             Yopilgan
           </Tab.Item>
         </Tab>
       </Wrapper>
-      <Wrapper align>
+      <Wrapper align order="third">
         <Toggle>
           <IconWrapone
             active={!isTabActive}

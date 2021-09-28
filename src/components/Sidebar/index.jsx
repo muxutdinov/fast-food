@@ -27,7 +27,7 @@ export const Sidebar = () => {
       <Wrapper>
         {sidebar.map(({ id, title, path, Icon }) => {
           return (
-            <Item>
+            <Item key={id}>
               <Link exact key={id} to={path} activeStyle={activeStyle}>
                 <Icon className="icon" />
                 {title}
