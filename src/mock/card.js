@@ -6,7 +6,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Azizbek",
+        name: "Jaxongir Muxutdinov",
         phone: 1233445667,
       },
       operator: {
@@ -23,7 +23,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Raimjon",
+        name: "Jaxongir Muxutdinov",
         phone: 1233445667,
       },
       operator: {
@@ -42,7 +42,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Azizbek",
+        name: "Jaxongir first",
         phone: 1233445667,
       },
       operator: {
@@ -61,7 +61,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Azizbek",
+        name: "Jaxongir second",
         phone: 1233445667,
       },
       operator: {
@@ -78,7 +78,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Raimjon",
+        name: "Shaxboz",
         phone: 1233445667,
       },
       operator: {
@@ -97,7 +97,7 @@ export const card = {
       time: new Date(),
       total: "40.400",
       user: {
-        name: "Azizbek Mamadaliyev",
+        name: "Shaxbozjon",
         phone: 1233445667,
       },
       operator: {
@@ -114,7 +114,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Raimjon",
+        name: "Ziyodullo",
         phone: 1233445667,
       },
       operator: {
@@ -126,21 +126,21 @@ export const card = {
       },
     },
     {
-        id: 42,
-        orderId: 98654,
-        time: new Date(),
-        total: "40,400",
-        user: {
-          name: "Raimjon",
-          phone: 1233445667,
-        },
-        operator: {
-          name: "Komilova A",
-        },
-        filial: {
-          title: "KFC",
-          location: "Maksim Gorkiy",
-        },
+      id: 42,
+      orderId: 98654,
+      time: new Date(),
+      total: "40,400",
+      user: {
+        name: "Akmal",
+        phone: 1233445667,
       },
+      operator: {
+        name: "Komilova A",
+      },
+      filial: {
+        title: "KFC",
+        location: "Maksim Gorkiy",
+      },
+    },
   ],
 };

@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from './style'
 import Navbar from './Navbar'
 import Body from "./Body";
+
+
+
 export const Buyurtmalar = () => {
+const [active, setActive] = useState(false)
   return <Container>
-    <Navbar/>
-    <Body/>
+    <Navbar onClick={(state)=>setActive(state)}/>
+    <Body active={active} />
   </Container>;
 };
 export default Buyurtmalar;

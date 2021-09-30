@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
-  min-width: 200px;
+  width: 250px;
+  min-width: 250px;
   height: 765px;
   padding: 18px 0 24px 0;
   background-color: white;
@@ -39,8 +39,8 @@ Text.Title = styled.div`
 `;
 
 Text.Desc = styled.div`
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 13px;
+  line-height: 14px;
   color: #2d3a45;
   mix-blend-mode: normal;
   opacity: 0.5;
@@ -63,15 +63,15 @@ export const Link = styled(NavLink)`
   display: flex;
   align-items: center;
   font-family: SFProDisplay;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 15px;
   color: #2d3a45;
   text-decoration: none;
   border-radius: 0px 6px 6px 0px;
   .icon {
     margin-right: 15px;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     padding: 10px;
     background: #f6f6f6;
     border-radius: 6px;
@@ -100,8 +100,8 @@ export const ComWrap = styled.div`
 Wrapper.Title = styled.div`
   margin-left: 15px;
   font-family: SFProDisplay;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 15px;
   color: #2d3a45;
 `;
 export const activeStyle = {

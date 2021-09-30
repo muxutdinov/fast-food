@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import two from "../../../assets/icons/two.svg";
-import twos from "../../../assets/icons/twos.svg";
-import group from "../../../assets/icons/Group.svg";
 
 import {
   Container,
@@ -10,44 +7,46 @@ import {
   Wrapper,
   Tab,
   Toggle,
-  Menu,
-  Group,
   IconWraptwo,
   IconWrapone,
+  MenuH,
+  MenuV,
 } from "./style";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   const [isActive, setIsActive] = useState("Yangi");
   const [isTabActive, setIsTabActive] = useState(true);
   return (
     <Container>
       <Wrapper align order="first">
         <Plus />
-        <Title>Yangi buyurtma <br/> qo'shish</Title>
+        <Title>
+          Yangi buyurtma <br /> qo'shish
+        </Title>
       </Wrapper>
       <Wrapper order="second">
-        <Tab>
+        <Tab  active={isTabActive}>
           <Tab.Item
-            onClick={() => setIsActive("Yangi")}
             active={isActive === "Yangi"}
+            onClick={() => setIsActive("Yangi")}
           >
             Yangi
           </Tab.Item>
           <Tab.Item
-            onClick={() => setIsActive("Qabul")}
             active={isActive === "Qabul"}
+            onClick={() =>isTabActive &&  setIsActive("Qabul")}
           >
             Qabul qilingan
           </Tab.Item>
           <Tab.Item
             active={isActive === "Jo'natilgan"}
-            onClick={() => setIsActive("Jo'natilgan")}
+            onClick={() =>isTabActive &&  setIsActive("Jo'natilgan")}
           >
             Jo'natilgan
           </Tab.Item>
           <Tab.Item
             active={isActive === "Yopilgan"}
-            onClick={() => setIsActive("Yopilgan")}
+            onClick={() =>isTabActive && setIsActive("Yopilgan")}
           >
             Yopilgan
           </Tab.Item>
@@ -59,14 +58,13 @@ export const Navbar = () => {
             active={!isTabActive}
             onClick={() => setIsTabActive(false)}
           >
-            <Menu one src={two} />
-            <Menu src={twos} />
+            <MenuV active={!isTabActive} />
           </IconWrapone>
           <IconWraptwo
             active={isTabActive}
             onClick={() => setIsTabActive(true)}
           >
-            <Group src={group} />
+            <MenuH active={isTabActive} />
           </IconWraptwo>
         </Toggle>
       </Wrapper>

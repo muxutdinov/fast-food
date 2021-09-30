@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
-
+import { ReactComponent as menuH } from "../../../assets/icons/menuH.svg";
+import { ReactComponent as menuV } from "../../../assets/icons/menuV.svg";
 // const getOrder = ({ order }) => {
 //   switch (order) {
 //     case "first":
@@ -31,7 +32,7 @@ export const Container = styled.div`
   display: flex;
   position: sticky;
   top: 0;
-  z-index:999;
+  z-index: 999;
   /* @madia (max-width:1900px) {
     flex-direction: column;
   } */
@@ -44,10 +45,9 @@ export const Wrapper = styled.div`
   align-items: center;
   width: ${({ align }) => (align ? "200px" : "100%")};
   border: 1px solid #e5e5e5;
-  
-`;
+  `;
 export const Plus = styled(plus)`
-   padding: 11px;
+padding: 11px;
   background: #20d472;
   width: 36px;
   height: 36px;
@@ -56,15 +56,15 @@ export const Plus = styled(plus)`
   border-radius: 50%;
   cursor: pointer;
   margin-right: 14px;
-`;
+  `;
 
 export const Title = styled.pre`
-  font-weight: 900;
+font-weight: 900;
   font-family: SFProDisplay;
   font-size: 12px;
   line-height: 16px;
   color: #2d3a45;
-`;
+  `;
 
 export const Tab = styled.div`
   height: 38px;
@@ -74,17 +74,18 @@ export const Tab = styled.div`
   border-radius: 24px;
   align-items: center;
   justify-content: space-around;
-`;
+  opacity: ${({active})=>!active && 0.4};
+  `;
 
 Tab.Item = styled.div`
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-family: SFProDisplay;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   width: 150px;
-  color: #2d3a45;
+  color: #9c9fa2;
   mix-blend-mode: normal;
   cursor: pointer;
   transition: all 0.3s;
@@ -92,23 +93,7 @@ Tab.Item = styled.div`
   box-shadow: ${({ active }) =>
     active && "0px 2px 2px rgba(174, 176, 181, 0.314986)"};
   border-radius: 18px;
-  height: 30px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: SFProDisplay;
-  font-size: 14px;
-  line-height: 16px;
-  width: 170px;
-  color: #9c9fa2;
-  mix-blend-mode: normal;
-  cursor: pointer;
-  transition: all 0.3s;
-  background: ${({ active }) => active && 'white'};
-  box-shadow: ${({ active }) =>
-    active && '0px 2px 2px rgba(174, 176, 181, 0.314986)'};
-  border-radius: 18px;
-  height: 28px;
+  height: 26px;
 `;
 export const Toggle = styled.div`
   display: flex;
@@ -120,16 +105,16 @@ export const Toggle = styled.div`
   border-radius: 18px;
 `;
 
-export const Menu = styled.img`
+export const MenuV = styled(menuV)`
   width: 12px;
   height: 12px;
-  margin-left: 9px;
-  margin-top: ${({ one }) => (one ? "4px" : "")};
+  fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
 `;
 
-export const Group = styled.img`
-  width: 14px;
-  height: 14px;
+export const MenuH = styled(menuH)`
+  width: 13px;
+  height: 13px;
+  fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
 `;
 
 export const IconWraptwo = styled.div`
@@ -148,6 +133,8 @@ export const IconWraptwo = styled.div`
 export const IconWrapone = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 30px;
   width: 30px;
   font-size: 12px;

@@ -1,15 +1,13 @@
 import React from "react";
-import MenuH from '../menuH'
-import MenuV from '../menuV'
-import { Container } from "./style";
+import ProductCard from "../ProductCard";
+import { card } from "../../../mock/card";
+import { Container, Wrapper } from "./style";
 
-export const Body = (props) => {
-  console.log(props, "pr");
+export const Body = () => {
   return (
     <Container>
-      <MenuH/>
-      <MenuV/>
-      {/* <Wrapper>
+      <h1>MenuV</h1>
+      <Wrapper>
         {card.yangi.map((value) => (
           <ProductCard key={value.id} value={value} />
         ))}
@@ -28,7 +26,7 @@ export const Body = (props) => {
         {card.yopilgan.map((value) => (
           <ProductCard key={value.id} value={value} />
         ))}
-      </Wrapper> */}
+      </Wrapper>
     </Container>
   );
 };

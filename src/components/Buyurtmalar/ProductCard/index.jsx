@@ -6,7 +6,7 @@ import { Container, IconWrapper, Info, Wrapper, Timer, Footer } from "./style";
 export const ProductCard = ({value}) => {
   return (
     <Container>
-      <Wrapper>
+      <Wrapper key={value.id}>
         <Info.Number>{value.orderId}</Info.Number>
         <IconWrapper>
           <Info.Save />
@@ -16,7 +16,7 @@ export const ProductCard = ({value}) => {
           <Info.Text>{value.time.getHours()}:{value.time.getMinutes()}</Info.Text>
         </Timer>
       </Wrapper>
-      <Wrapper flex>
+      <Wrapper flex key={value.id}>
         <Info>
           <Info.User />
           <div>
@@ -35,7 +35,7 @@ export const ProductCard = ({value}) => {
           </Info>
         </Info>
       </Wrapper>
-      <Wrapper flex>
+      <Wrapper flex key={value.id}>
         <Footer>
           <div>
             <Info.Sum operator={"true"}>Operator</Info.Sum>
