@@ -1,12 +1,14 @@
 import React from "react";
 import ProductCard from "../ProductCard";
-import { card } from "../../../mock/card";
 import { Container, Wrapper } from "./style";
+import { BuyurtmaContext, Buyurtmalar } from "../../context/buyurtmalar";
+
 
 export const Body = () => {
+  const [card, setBuyurtmaData] = BuyurtmaContext()
+  console.log(buyurtmaData,"buyurtmaData" );
   return (
     <Container>
-      <h1>MenuV</h1>
       <Wrapper>
         {card.yangi.map((value) => (
           <ProductCard key={value.id} value={value} />

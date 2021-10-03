@@ -6,7 +6,6 @@ import { Container, Wrapper } from "./style";
 export const Body = () => {
   return (
     <Container>
-      <h1>MenuH</h1>
       <Wrapper>
         {card.yangi.map((value) => (
           <ProductCard key={value.id} value={value} />

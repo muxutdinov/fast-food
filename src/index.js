@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Root from './root';
+import React from "react";
+import ReactDOM from "react-dom";
+import { MainContext } from "./components/context";
+import "./index.css";
+import Root from "./root";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <MainContext>
+      <Root />
+    </MainContext>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
