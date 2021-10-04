@@ -14,7 +14,7 @@ export const Body = () => {
         ))}
       </Wrapper>
       <Wrapper>
-        {card.Qabul.map((value) => (
+        {card.qabul.map((value) => (
           <ProductCard key={value.id} value={value} />
         ))}
       </Wrapper>
