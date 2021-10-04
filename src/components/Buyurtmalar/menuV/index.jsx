@@ -6,7 +6,6 @@ import { BuyurtmaContext, Buyurtmalar } from "../../context/buyurtmalar";
 
 export const Body = () => {
   const [card, setBuyurtmaData] = BuyurtmaContext()
-  console.log(buyurtmaData,"buyurtmaData" );
   return (
     <Container>
       <Wrapper>

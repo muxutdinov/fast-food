@@ -2,8 +2,16 @@ import React from "react";
 import Dane from "../../Generic/Dane";
 import Cancel from "../../Generic/Cancel";
 import { Container, IconWrapper, Info, Wrapper, Timer, Footer } from "./style";
+import { BuyurtmaContext } from "../../context/buyurtmalar";
 
-export const ProductCard = ({value}) => {
+export const ProductCard = ({ value }) => {
+  const [card, setBuyurtmaData] = BuyurtmaContext();
+  const onDane = () => {
+    console.log(value.id, "value");
+  };
+  const onCancel = () => {
+    console.log(value.id, "value");
+  };
   return (
     <Container>
       <Wrapper key={value.id}>
@@ -13,7 +21,9 @@ export const ProductCard = ({value}) => {
         </IconWrapper>
         <Timer>
           <Info.Clock></Info.Clock>
-          <Info.Text>{value.time.getHours()}:{value.time.getMinutes()}</Info.Text>
+          <Info.Text>
+            {value.time.getHours()}:{value.time.getMinutes()}
+          </Info.Text>
         </Timer>
       </Wrapper>
       <Wrapper flex key={value.id}>
@@ -41,14 +51,20 @@ export const ProductCard = ({value}) => {
             <Info.Sum operator={"true"}>Operator</Info.Sum>
             <Info.Name>{value.operator.name}</Info.Name>
           </div>
-          <Cancel />
+          <div  onClick={onCancel}>
+            <Cancel/>
+          </div>
         </Footer>
         <Footer>
           <div>
             <Info.Sum operator>Filial</Info.Sum>
-            <Info.Name>{value.filial.title} <br/> {value.filial.location}</Info.Name>
+            <Info.Name>
+              {value.filial.title} <br /> {value.filial.location}
+            </Info.Name>
           </div>
-          <Dane />
+          <div onClick={onDane}>
+            <Dane />
+          </div>
         </Footer>
       </Wrapper>
     </Container>
