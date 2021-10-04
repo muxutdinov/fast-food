@@ -1,11 +1,11 @@
 import React from "react";
 import ProductCard from "../ProductCard";
 import { Container, Wrapper } from "./style";
-import { BuyurtmaContext, Buyurtmalar } from "../../context/buyurtmalar";
+import { BuyurtmaContext, Buyurtmalar } from "../../context/Buyurtmalar/buyurtmalar";
 
 
 export const Body = () => {
-  const [card, setBuyurtmaData] = BuyurtmaContext()
+  const [card] = BuyurtmaContext()
   return (
     <Container>
       <Wrapper>

@@ -1,73 +1,78 @@
-import React from "react";
-import Dane from "../../Generic/Dane";
-import Cancel from "../../Generic/Cancel";
-import { Container, IconWrapper, Info, Wrapper, Timer, Footer } from "./style";
-import { BuyurtmaContext } from "../../context/buyurtmalar";
+import React from 'react';
+import Done from '../../Generic/Dane';
+import Cancel from '../../Generic/Cancel'
+import { Container, Footer, IconWrapper, Info, Timer, Wrapper } from './style';
+import { BuyurtmaContext } from '../../context/Buyurtmalar/buyurtmalar';
+
 
 export const ProductCard = ({ value }) => {
-  const [card, setBuyurtmaData] = BuyurtmaContext();
-  const onDane = () => {
-    console.log(value.id, "value");
+  const [, dispatch] = BuyurtmaContext();
+
+  const onCancel = (value) => {
+    // console.log(value.categoria, value.id);
+    // let filtered = card[value.categoria].filter((data) => data.id !== value.id);
+    // let newData = { ...card, [value.categoria]: filtered };
+    // console.log(filtered, newData);
+    dispatch({ type: 'delete', payload: value });
   };
-  const onCancel = () => {
-    console.log(value.id, "value");
+  const onDone = (value) => {
+    console.log(value, 'done');
   };
   return (
     <Container>
-      <Wrapper key={value.id}>
-        <Info.Number>{value.orderId}</Info.Number>
+      <Wrapper>
+        <Info.OrderID>{value.orderId}</Info.OrderID>
         <IconWrapper>
           <Info.Save />
         </IconWrapper>
         <Timer>
-          <Info.Clock></Info.Clock>
-          <Info.Text>
-            {value.time.getHours()}:{value.time.getMinutes()}
-          </Info.Text>
+          <Info.Clock />
+          <Info.Text>{`${value.time.getHours()}: ${value.time.getMinutes()}`}</Info.Text>
         </Timer>
       </Wrapper>
-      <Wrapper flex key={value.id}>
+      <Wrapper flex>
         <Info>
           <Info.User />
           <div>
             <Info.Name>{value.user.name}</Info.Name>
-            <Info.Num>{value.user.phone}</Info.Num>
+            <Info.Nuber>{value.user.phone}</Info.Nuber>
           </div>
         </Info>
-        <Info>
-          <div className="sum">
-            <Info.Sum>Umumiy summa</Info.Sum>
-            <Info.Price>{value.total}</Info.Price>
+        <Info center>
+          <div>
+            <Info.Total top>Umumiy Summa</Info.Total>
+            <Info.Price>{value.total} UZS</Info.Price>
           </div>
-          <Info right>
+          <Info end={'true'}>
             <Info.PaymeIcon />
             <Info.Payme>Payme</Info.Payme>
           </Info>
         </Info>
       </Wrapper>
-      <Wrapper flex key={value.id}>
+      <Wrapper flex last>
         <Footer>
           <div>
-            <Info.Sum operator={"true"}>Operator</Info.Sum>
+            <Info.Total>Operator</Info.Total>
             <Info.Name>{value.operator.name}</Info.Name>
           </div>
-          <div  onClick={onCancel}>
-            <Cancel/>
+          <div onClick={() => onCancel(value)}>
+            <Cancel />
           </div>
         </Footer>
         <Footer>
           <div>
-            <Info.Sum operator>Filial</Info.Sum>
+            <Info.Total>Filiall</Info.Total>
             <Info.Name>
               {value.filial.title} <br /> {value.filial.location}
             </Info.Name>
           </div>
-          <div onClick={onDane}>
-            <Dane />
+          <div onClick={() => onDone(value)}>
+            <Done />
           </div>
         </Footer>
       </Wrapper>
     </Container>
   );
 };
+
 export default ProductCard;

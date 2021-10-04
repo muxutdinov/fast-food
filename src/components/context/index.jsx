@@ -1,5 +1,5 @@
 import React from "react";
-import { Buyurtmalar } from "./buyurtmalar";
+import { Buyurtmalar } from "./Buyurtmalar/buyurtmalar";
 export const MainContext = ({ children }) => {
   return (
     <div>
