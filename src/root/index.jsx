@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./style";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Buyurtmalar/Sidebar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { sidebar } from "../utils/sidebar";
 import Notfound from "../components/Notfound";

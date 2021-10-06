@@ -2,17 +2,15 @@ import React from 'react';
 import Done from '../../Generic/Dane';
 import Cancel from '../../Generic/Cancel'
 import { Container, Footer, IconWrapper, Info, Timer, Wrapper } from './style';
-import { BuyurtmaContext } from '../../context/Buyurtmalar/buyurtmalar';
+import { BuyurtmaContext } from '../../context/Buyurtmalar/buyurtmalar'
 
 
 export const ProductCard = ({ value }) => {
-  const [, dispatch] = BuyurtmaContext();
+  const [dispatch] = BuyurtmaContext();
 
   const onCancel = (value) => {
-    // console.log(value.categoria, value.id);
     // let filtered = card[value.categoria].filter((data) => data.id !== value.id);
-    // let newData = { ...card, [value.categoria]: filtered };
-    // console.log(filtered, newData);
+    // let newData = { ...card, [value.categoria]: filtered }
     dispatch({ type: 'delete', payload: value });
   };
   const onDone = (value) => {
@@ -76,3 +74,5 @@ export const ProductCard = ({ value }) => {
 };
 
 export default ProductCard;
+
+

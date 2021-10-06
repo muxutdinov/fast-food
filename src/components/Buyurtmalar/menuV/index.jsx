@@ -1,11 +1,13 @@
-import React from "react";
-import ProductCard from "../ProductCard";
-import { Container, Wrapper } from "./style";
-import { BuyurtmaContext, Buyurtmalar } from "../../context/Buyurtmalar/buyurtmalar";
+import React from 'react';
+import { Container, Wrapper } from './style';
+import ProductCard from '../../../components/Buyurtmalar/ProductCard';
 
+
+import {BuyurtmaContext} from '../../context/Buyurtmalar/buyurtmalar'
 
 export const Body = () => {
-  const [card] = BuyurtmaContext()
+  const [card] = BuyurtmaContext();
+  console.log(card, 'card');
   return (
     <Container>
       <Wrapper>
@@ -31,4 +33,5 @@ export const Body = () => {
     </Container>
   );
 };
+
 export default Body;

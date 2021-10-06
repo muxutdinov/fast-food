@@ -1,7 +1,7 @@
-import React from "react";
-import ProductCard from "../ProductCard";
-import { card } from "../../../mock/card";
-import { Container, Wrapper } from "./style";
+import React from 'react';
+import { Container, Wrapper } from './style';
+import ProductCard from '../../../components/Buyurtmalar/ProductCard';
+import { card } from '../../../mock/card';
 
 export const Body = () => {
   return (
@@ -29,4 +29,5 @@ export const Body = () => {
     </Container>
   );
 };
+
 export default Body;

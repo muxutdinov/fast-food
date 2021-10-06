@@ -10,9 +10,9 @@ import {
   WrapperIcon,
   ComWrap,
 } from "./style";
-import logo from "../../assets/imgs/logo.png";
-import { sidebar } from "../../utils/sidebar";
-import { ReactComponent as Chiqish } from "../../assets/icons/logout.svg";
+import logo from "../../../assets/imgs/logo.png";
+import { sidebar } from "../../../utils/sidebar";
+import { ReactComponent as Chiqish } from "../../../assets/icons/logout.svg";
 
 export const Sidebar = () => {
   return (
