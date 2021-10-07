@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useState } from "react";
+import React, { createContext, useContext, useReducer } from "react";
 import { card } from "../../../mock/card";
 import { reducer } from "./reducer";
 
@@ -6,9 +6,8 @@ export const BuyurtmalarContext = createContext();
 export const BuyurtmaContext = () => useContext(BuyurtmalarContext);
 
 export const Buyurtmalar = ({ children }) => {
-  const [data,setData] = useState(card)
   return (
-    <BuyurtmalarContext.Provider value={[data,setData]}>
+    <BuyurtmalarContext.Provider value={useReducer(reducer,card)}>
       {children}
     </BuyurtmalarContext.Provider>
   );

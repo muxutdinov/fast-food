@@ -139,7 +139,7 @@ export const card = {
       },
     },
     {
-      id: 42,
+      id: 43,
       orderId: 98654,
       categoria:"yopilgan",
 

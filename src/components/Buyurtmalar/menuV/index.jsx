@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Wrapper } from './style';
 import ProductCard from '../../../components/Buyurtmalar/ProductCard';
 
-
-import {BuyurtmaContext} from '../../context/Buyurtmalar/buyurtmalar'
+import { BuyurtmaContext } from '../../../components/context/Buyurtmalar/buyurtmalar';
 
 export const Body = () => {
   const [card] = BuyurtmaContext();
