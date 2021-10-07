@@ -11,13 +11,13 @@ export const Container = styled.div`
   background: #ffffff;
   border-radius: 6px;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   max-height: fit-content;
-  padding: 0 20px 20px 20px;
+  padding: 0 15px 15px 15px;
   margin-bottom: 8px;
   transition: all 0.3s;
   :hover {
-    box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
+    box-shadow: 0px 15px 20px rgba(176, 177, 181, 0.432802);
   }
 `;
 
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   width: 100%;
   padding-bottom: ${({ last }) => !last && '25px'};
 
-  padding-top: 25px;
+  padding-top: 20px;
   border-bottom: ${({ last }) => !last && '1px solid #d9d7d7'}; ;
 `;
 
@@ -41,55 +41,55 @@ Info.OrderID = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 80px;
+  min-width: 60px;
   max-width: fit-content;
-  height: 36px;
+  height: 30px;
 
   background: #20d472;
   border-radius: 18px;
 
   font-family: SFProDisplay;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.466667px;
   color: #ffffff;
-  margin-right: 25px;
+  margin-right: 20px;
 `;
 
 export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background: #edeff3;
   border-radius: 18px;
 `;
 
 Info.Save = styled(save)`
-  width: 14px;
-  height: 16px;
+  width: 12px;
+  height: 14px;
 `;
 
 Info.Clock = styled(clock)`
   display: flex;
   margin-right: 10px;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 `;
 
 Info.Text = styled.div`
   display: flex;
   font-family: SFProDisplay;
-  font-size: 22px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   color: #2d3a45;
 `;
 
 Info.User = styled(user)`
-  width: 24px;
-  height: 24px;
-  margin-right: 22px;
+  width: 18px;
+  height: 18px;
+  margin-right: 18px;
 `;
 
 export const Timer = styled.div`
@@ -100,8 +100,8 @@ export const Timer = styled.div`
 
 Info.Name = styled.div`
   font-family: SFProDisplay;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
   letter-spacing: 0.533333px;
   color: #2d3a45;
 `;
@@ -116,22 +116,22 @@ Info.Nuber = styled.div`
 
   mix-blend-mode: normal;
   opacity: 0.7;
-  margin: 5px 0 20px 0;
+  margin: 4px 0 16px 0;
 `;
 
 Info.Total = styled.div`
   font-family: SFProDisplay;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.366667px;
   color: #8d9ba8;
-  margin-top: ${({ top }) => top && '20px'};
-  margin-bottom: 5px;
+  margin-top: ${({ top }) => top && '15px'};
+  margin-bottom: 4px;
 `;
 
 Info.Price = styled.div`
   font-family: SFProDisplay bold;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 18px;
   letter-spacing: 0.666667px;
 
@@ -141,8 +141,8 @@ Info.Price = styled.div`
 Info.PaymeIcon = styled.div`
   display: flex;
   margin-left: auto;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background: #14e5e4;
   border-radius: 50%;
 `;
@@ -151,9 +151,9 @@ Info.Payme = styled.div`
   display: flex;
 
   font-family: SFProDisplay;
-  font-size: 16px;
-  line-height: 18px;
-  margin-left: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
   letter-spacing: 0.466667px;
   color: #2d3a45;
 `;
@@ -163,5 +163,5 @@ export const Footer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 `;

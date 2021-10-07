@@ -6,13 +6,14 @@ import { BuyurtmaContext } from '../../context/Buyurtmalar/buyurtmalar'
 
 
 export const ProductCard = ({ value }) => {
-  const [dispatch] = BuyurtmaContext();
+  const [state,dispatch] = BuyurtmaContext();
 
   const onCancel = (value) => {
     // let filtered = card[value.categoria].filter((data) => data.id !== value.id);
     // let newData = { ...card, [value.categoria]: filtered }
-    dispatch({ type: 'delete', payload: value });
-  };
+    // dispatch({ type: 'delete', payload: value });
+    let newData = state[value.categoria].filter((item)=> value.id!==item.id);
+  }
   const onDone = (value) => {
     console.log(value, 'done');
   };
@@ -74,5 +75,3 @@ export const ProductCard = ({ value }) => {
 };
 
 export default ProductCard;
-
-
