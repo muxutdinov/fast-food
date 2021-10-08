@@ -16,6 +16,22 @@ import {
   Time,
   Border,
   Last,
+  Wrapikki,
+  User,
+  Name,
+  Phone,
+  Tel,
+  Wrapuch,
+  Sum,
+  Narx,
+  Truck,
+  IconWraps,
+  Umumiy,
+  Number,
+  Oval,
+  Payme,
+  Wraptort,
+  Oprname,
 } from "./style";
 import { BuyurtmaContext } from "../../context/Buyurtmalar/buyurtmalar";
 
@@ -34,19 +50,65 @@ export const ProductCard = ({ value }) => {
         <MinWrapbir>
           <Wrapbir align>
             <Num>{value.orderId}</Num>
-            <Border/>
-            <IconWrap><Save/></IconWrap>
+            <Border />
+            <IconWrap>
+              <Save />
+            </IconWrap>
           </Wrapbir>
           <Wrapbir>
-            <Soat/>
+            <Soat />
             <Time>00:34</Time>
           </Wrapbir>
         </MinWrapbir>
-        <Last/>
-        <MinWrapikki>2</MinWrapikki>
-        <MinWrapuch>3</MinWrapuch>
-        <MinWraptort>4</MinWraptort>
+        <Last />
+        <MinWrapikki>
+          <Wrapikki>
+            <User />
+            <Name>{value.user.name}</Name>
+          </Wrapikki>
+          <Wrapikki>
+            <Phone />
+            <Tel>(+99893) 461-41-88</Tel>
+          </Wrapikki>
+        </MinWrapikki>
+        <Last />
+        <MinWrapuch>
+          <IconWraps>
+            <Wrapuch>
+              <Sum />
+              <Narx>{value.total} UZS</Narx>
+            </Wrapuch>
+            <Wrapuch>
+              <Truck />
+              <Narx truck>{value.total} UZS</Narx>
+            </Wrapuch>
+          </IconWraps>
+          <Wrapuch number>
+            <Umumiy>Umumiy summa</Umumiy>
+            <Number>{value.total} UZS</Number>
+          </Wrapuch>
+          <Payme>
+            <Oval /> <div className="pay">Payme</div>
+          </Payme>
+        </MinWrapuch>
+        <Last />
+        <MinWraptort>
+          <Wraptort>
+            <Umumiy>Operator:</Umumiy>
+            <Oprname>{value.operator.name}</Oprname>
+          </Wraptort>
+          <Wraptort>
+            <Umumiy>Filial:</Umumiy>
+            <Oprname>
+              {value.filial.title}
+              <br />
+              {value.filial.location}
+            </Oprname>
+          </Wraptort>
+        </MinWraptort>
       </Wrapper>
+        <Cancel />
+        <Done />
     </Container>
   );
 };
