@@ -6,7 +6,7 @@ import Body from "./Body";
 
 
 export const Buyurtmalar = () => {
-const [active, setActive] = useState(false)
+const [active, setActive] = useState(true)
   return <Container>
     <Navbar onClick={(state)=>setActive(state)}/>
     <Body active={active} />

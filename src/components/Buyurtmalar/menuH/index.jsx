@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Wrapper } from './style';
-import ProductCard from '../../../components/Buyurtmalar/ProductCard';
+import ProductCard from '../../../components/Buyurtmalar/ProductCardH';
 import { BuyurtmaContext } from '../../../components/context/Buyurtmalar/buyurtmalar';
 
 export const Body = () => {
