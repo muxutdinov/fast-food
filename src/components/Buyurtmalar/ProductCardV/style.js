@@ -9,9 +9,15 @@ import { ReactComponent as oval } from "../../../assets/icons/Oval.svg";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 20px;
 `;
+
+export const And = styled.div`
+display: flex;
+flex-direction: column;
+`
+
 
 export const Wrapper = styled.div`
   display: flex;
