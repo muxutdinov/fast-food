@@ -55,24 +55,24 @@ export const Navbar = (props) => {
       <Wrapper align order="third">
         <Toggle>
           <IconWrapone
-            active={!isTabActive}
+            active={isTabActive}
             onClick={() => 
               {
-                setIsTabActive(false)
-                props.onClick(false)
-              }}
-          >
-            <MenuV active={!isTabActive} />
-          </IconWrapone>
-          <IconWraptwo
-            active={isTabActive}
-            onClick={() =>
-              { 
                 setIsTabActive(true)
                 props.onClick(true)
               }}
           >
-            <MenuH active={isTabActive} />
+            <MenuV active={isTabActive} />
+          </IconWrapone>
+          <IconWraptwo
+            active={!isTabActive}
+            onClick={() =>
+              { 
+                setIsTabActive(false)
+                props.onClick(false)
+              }}
+          >
+            <MenuH active={!isTabActive} />
           </IconWraptwo>
         </Toggle>
       </Wrapper>
