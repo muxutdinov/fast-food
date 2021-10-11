@@ -1,4 +1,5 @@
 import React from "react";
+import { Navcon } from "./style";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 export const Katalog = ({ location }) => {
@@ -9,12 +10,13 @@ export const Katalog = ({ location }) => {
 
   return (
     <div>
+      <Navcon/>
       <GoogleMap
-        zoom={10}
+        zoom={12}
         center={{ lat: 41.2995, lng: 69.2401 }}
-        mapContainerStyle={{ width: "1500px", height: "1000px" }}
+        mapContainerStyle={{ width: "1100px", height: "700px" }}
       >
-        <Marker position={{ lat: 41.2995, lng: 69.2401 }} />
+        <Marker position={{ lat: 41.0995, lng: 69.0401 }} />
         <Marker position={{ lat: 41.1995, lng: 69.1401 }} />
         <Marker position={{ lat: 41.3995, lng: 69.3401 }} />
       </GoogleMap>

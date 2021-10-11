@@ -1,7 +1,6 @@
 import Generic from "../page/Generic";
-import Katalog from "../page/Katalog";
 import Buyurtmalar from "../page/Buyurtmalar";
-// import Catalog from "../page/Katalog";
+import Catalog from "../page/Katalog";
 
 //=== Icons
 import {ReactComponent as buyurtmalar} from "../assets/icons/buyurtmalar.svg";
@@ -75,7 +74,7 @@ export const sidebar = [
     id: 8,
     path: "/katalog",
     title: "Katalog",
-    Component: Katalog,
+    Component: Catalog,
     Icon: settings,
     hidden: false,
   },

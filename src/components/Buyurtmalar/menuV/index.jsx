@@ -1,7 +1,6 @@
-import React from "react";
-import { Container, Wrapper, Wrappercon } from "./style";
+import React, {useState} from "react";
+import { Container, Wrapper } from "./style";
 import ProductCard from "../../../components/Buyurtmalar/ProductCardV";
-
 import { BuyurtmaContext } from "../../../components/context/Buyurtmalar/buyurtmalar";
 
 export const Body = () => {
@@ -10,10 +9,25 @@ export const Body = () => {
   return (
     <Container>
       <Wrapper>
-      {card.yopilgan.map((value) => (
+      {card.yangi.map((value) => (
           <ProductCard key={value.id} value={value} />
         ))}
       </Wrapper>
+      {/* <Wrapper>
+      {card.qabul.map((value) => (
+          <ProductCard key={value.id} value={value} />
+        ))}
+      </Wrapper>
+      <Wrapper>
+      {card.jonatilgan.map((value) => (
+          <ProductCard key={value.id} value={value} />
+        ))}
+      </Wrapper>
+      <Wrapper>
+      {card.yopilgan.map((value) => (
+          <ProductCard key={value.id} value={value} />
+        ))}
+      </Wrapper> */}
     </Container>
   );
 };
