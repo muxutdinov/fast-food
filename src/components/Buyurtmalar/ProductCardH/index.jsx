@@ -5,7 +5,7 @@ import { Container, Footer, IconWrapper, Info, Timer, Wrapper } from './style';
 import { BuyurtmaContext } from '../../context/Buyurtmalar/buyurtmalar';
 
 export const ProductCard = ({ value }) => {
-  const [, dispatch] = BuyurtmaContext();
+  const [,dispatch] = BuyurtmaContext();
 
   const onCancel = (value) => {
     dispatch({ type: 'delete', payload: value });
