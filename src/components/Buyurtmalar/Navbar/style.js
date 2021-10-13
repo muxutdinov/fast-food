@@ -3,20 +3,6 @@ import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as menuH } from "../../../assets/icons/menuH.svg";
 import { ReactComponent as menuV } from "../../../assets/icons/menuV.svg";
 
-
-// const getFlex = ({ order }) => {
-//   switch (order) {
-//     case "first":
-//       return 1;
-//     case "second":
-//       return 3;
-//     case "third":
-//       return 2;
-//     default:
-//       return 1;
-//   }
-// };
-
 export const Container = styled.div`
   display: flex;
   position: sticky;
