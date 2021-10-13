@@ -17,6 +17,7 @@ export const Navbar = (props) => {
   const [isActive, setIsActive] = useState("Yangi");
   const [isTabActive, setIsTabActive] = useState(true);
   return (
+    <>
     <Container>
       <Wrapper align order="first">
         <Plus />
@@ -77,6 +78,7 @@ export const Navbar = (props) => {
         </Toggle>
       </Wrapper>
     </Container>
+    </>
   );
 };
 export default Navbar;

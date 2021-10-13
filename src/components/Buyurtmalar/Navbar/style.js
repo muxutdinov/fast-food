@@ -33,9 +33,6 @@ export const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 999;
-  /* @madia (max-width:1900px) {
-    flex-direction: column;
-  } */
 `;
 export const Wrapper = styled.div`
   padding: 22px 40px;
