@@ -3,7 +3,7 @@ import { Container, Wrapper } from "./style";
 import ProductCard from "../../../components/Buyurtmalar/ProductCardV";
 import { BuyurtmaContext } from "../../../components/context/Buyurtmalar/buyurtmalar";
 
-export const Body = () => {
+export const Body = (props) => {
   const [card] = BuyurtmaContext();
   console.log(card, "card");
   return (

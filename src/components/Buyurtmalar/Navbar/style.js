@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 export const Wrapper = styled.div`
   padding: 22px 40px;
-  height: 60px;
+  height: 70px;
   background: white;
   display: flex;
   align-items: center;
