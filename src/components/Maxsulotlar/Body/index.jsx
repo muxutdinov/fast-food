@@ -1,6 +1,6 @@
 import React from "react";
+import Card from "../Card";
 import {
-  Container,
   Top,
   Topwrapbir,
   Topwrapikki,
@@ -8,13 +8,6 @@ import {
   Topwrapuch,
   Topwrapbesh,
   Border,
-  WrapperCon,
-  Wraptext,
-  Iconbir,
-  Iconswrap,
-  Iconone,
-  Icontwo,
-  Icones,
 } from "./style";
 export const Body = () => {
   return (
@@ -30,33 +23,14 @@ export const Body = () => {
         <Border />
         <Topwrapbesh>ACTION</Topwrapbesh>
       </Top>
-      <Container>
-        <WrapperCon>
-          <Iconbir />
-          <Wraptext>Lavash mini</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Wraptext>Lavash</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Wraptext>18,000 UZS</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Wraptext>Kichkina</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Iconswrap>
-            <Icones>
-              <Icontwo />
-            </Icones>
-          </Iconswrap>
-          <Iconswrap>
-            <Icones>
-              <Iconone />
-            </Icones>
-          </Iconswrap>
-        </WrapperCon>
-      </Container>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </>
   );
 };
