@@ -1,6 +1,6 @@
 import Generic from "../page/Generic";
 import Buyurtmalar from "../page/Buyurtmalar";
-import Catalog from "../page/Katalog";
+import Xaritaa from "../page/Xarita";
 import Maxsulotlar from "../page/Maxsulotlar";
 import Xisobots from "../page/Xisobot";
 //=== Icons
@@ -74,9 +74,17 @@ export const sidebar = [
   {
     id: 8,
     path: "/katalog",
-    title: "Katalog",
-    Component: Catalog,
+    title: "Xarita",
+    Component: Xaritaa,
     Icon: settings,
     hidden: false,
   },
+  // {
+  //   id: 9,
+  //   path: "/katalog",
+  //   title: "Katalog",
+  //   Component: Catalog,
+  //   Icon: settings,
+  //   hidden: false,
+  // },
 ];

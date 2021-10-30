@@ -9,7 +9,7 @@ export const Container = styled.div`
   position: sticky;
   display: flex;
   flex-direction: row;
-  width: 1100px;
+  width: 1115px;
   height: 70px;
   background: #ffffff;
 `;
