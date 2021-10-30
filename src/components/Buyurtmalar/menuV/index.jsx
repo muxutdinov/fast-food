@@ -5,7 +5,6 @@ import { BuyurtmaContext } from "../../../components/context/Buyurtmalar/buyurtm
 
 export const Body = (props) => {
   const [card] = BuyurtmaContext();
-  console.log(card, "card");
   return (
     <Container>
       <Wrapper>

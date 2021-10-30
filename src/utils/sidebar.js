@@ -1,16 +1,17 @@
 import Generic from "../page/Generic";
 import Buyurtmalar from "../page/Buyurtmalar";
 import Catalog from "../page/Katalog";
-import Maxsulotlar from "../components/Maxsulotlar";
+import Maxsulotlar from "../page/Maxsulotlar";
+import Xisobots from "../page/Xisobot";
 //=== Icons
-import {ReactComponent as buyurtmalar} from "../assets/icons/buyurtmalar.svg";
-import {ReactComponent as filial} from "../assets/icons/filial.svg";
-import {ReactComponent as hisobot} from "../assets/icons/hisobot.svg";
-import {ReactComponent as katigoriya} from "../assets/icons/katigoriya.svg";
-import {ReactComponent as maxsulotlar} from "../assets/icons/maxsulotlar.svg";
-import {ReactComponent as mijozlar} from "../assets/icons/mijozlar.svg";
-import {ReactComponent as hodimlar} from "../assets/icons/settings.svg";
-import {ReactComponent as settings} from "../assets/icons/settings.svg";
+import { ReactComponent as buyurtmalar } from "../assets/icons/buyurtmalar.svg";
+import { ReactComponent as filial } from "../assets/icons/filial.svg";
+import { ReactComponent as hisobot } from "../assets/icons/hisobot.svg";
+import { ReactComponent as katigoriya } from "../assets/icons/katigoriya.svg";
+import { ReactComponent as maxsulotlar } from "../assets/icons/maxsulotlar.svg";
+import { ReactComponent as mijozlar } from "../assets/icons/mijozlar.svg";
+import { ReactComponent as hodimlar } from "../assets/icons/settings.svg";
+import { ReactComponent as settings } from "../assets/icons/settings.svg";
 
 export const sidebar = [
   {
@@ -21,7 +22,7 @@ export const sidebar = [
     Icon: buyurtmalar,
     hidden: true,
   },
-  
+
   {
     id: 2,
     path: "/maxsulatlar",
@@ -58,7 +59,7 @@ export const sidebar = [
     id: 6,
     path: "/hisobot",
     title: "Xisobot",
-    Component: Generic,
+    Component: Xisobots,
     Icon: hisobot,
     hidden: false,
   },
