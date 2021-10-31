@@ -3,6 +3,7 @@ import Buyurtmalar from "../page/Buyurtmalar";
 import Xaritaa from "../page/Xarita";
 import Maxsulotlar from "../page/Maxsulotlar";
 import Xisobots from "../page/Xisobot";
+import Catalog from "../page/Katalog";
 //=== Icons
 import { ReactComponent as buyurtmalar } from "../assets/icons/buyurtmalar.svg";
 import { ReactComponent as filial } from "../assets/icons/filial.svg";
@@ -73,18 +74,18 @@ export const sidebar = [
   },
   {
     id: 8,
-    path: "/katalog",
+    path: "/xarita",
     title: "Xarita",
     Component: Xaritaa,
     Icon: settings,
     hidden: false,
   },
-  // {
-  //   id: 9,
-  //   path: "/katalog",
-  //   title: "Katalog",
-  //   Component: Catalog,
-  //   Icon: settings,
-  //   hidden: false,
-  // },
+  {
+    id: 9,
+    path: "/katalog",
+    title: "Katalog",
+    Component: Catalog,
+    Icon: settings,
+    hidden: false,
+  },
 ];
