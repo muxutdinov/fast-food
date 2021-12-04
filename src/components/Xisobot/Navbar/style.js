@@ -2,20 +2,19 @@ import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as filter } from "../../../assets/icons/filter.svg";
 import { ReactComponent as search } from "../../../assets/icons/search.svg";
-import { ReactComponent as chart } from "../../../assets/icons/chart.svg";
-import { ReactComponent as notchart } from "../../../assets/icons/notchart.svg";
+import { ReactComponent as x } from "../../../assets/icons/x.svg";
 
 export const Container = styled.div`
   position: sticky;
+  top: 0;
   display: flex;
-  flex-direction: row;
   width: 1115px;
   height: 70px;
   background: #ffffff;
 `;
 export const Wrapper = styled.div`
+  position: relative;
   padding: 22px 40px;
-  padding-right: 0;
   height: 70px;
   background: white;
   display: flex;
@@ -34,6 +33,17 @@ export const Plus = styled(plus)`
   cursor: pointer;
   margin-right: 14px;
 `;
+export const Pluss = styled(x)`
+  padding: 11px;
+  background: #20d472;
+  width: 46px;
+  height: 46px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 14px;
+`;
 
 export const Title = styled.pre`
   font-weight: 900;
@@ -42,8 +52,11 @@ export const Title = styled.pre`
   line-height: 16px;
   color: #2d3a45;
 `;
-export const Wrapinput = styled.div`
+export const Wrapinput = styled.input`
+  padding: 10px;
+  outline: none;
   margin-left: 80px;
+  border: none;
   width: 280px;
   height: 40px;
   background: #edeff3;
@@ -72,6 +85,9 @@ export const Mintext = styled.div`
 `;
 
 export const Search = styled(search)`
+  position: absolute;
+  left: 350px;
+  bottom: 26px;
   width: 16px;
   height: 16px;
   margin-left: 180px;
@@ -108,48 +124,4 @@ export const Border = styled.div`
   width: 1.7px;
   opacity: 0.3;
   background-color: gray;
-`;
-export const Borders = styled.div`
-  margin-left: 320px;
-  height: 70px;
-  width: 2px;
-  opacity: 0.3;
-  background-color: gray;
-`;
-export const Lastcontainer = styled.div`
-  margin-left: auto;
-  height: 70px;
-  width: 170px;
-  /* background-color: yellow; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const Wrapperlasticons = styled.div`
-  width: 97px;
-  height: 48px;
-  background: #edeff3;
-  border-radius: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-`;
-export const LastIcon = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  background: #ffffff;
-  box-shadow: 0px 2px 2px rgba(174, 176, 181, 0.314986);
-  border-radius: 18px;
-`;
-export const Chart = styled(chart)`
-  width: 25px;
-  height: 25px;
-`;
-export const NotChart = styled(notchart)`
-  width: 20px;
-  height: 20px;
 `;

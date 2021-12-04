@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import {
   Container,
   Wrapper,
@@ -12,26 +13,32 @@ import {
   Filter,
   Filtericon,
   Border,
+  Pluss,
+  IconWrapper,
 } from "./style";
 
 export const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <Container>
         <Wrapper>
-          <Plus />
+          {/* <IconWrapper> */}
+          {toggle ? (
+            <li>
+              <i class="fa-li fa fa-spinner fa-spin"></i>as bullets
+            </li>
+          ) : (
+            // <Pluss onClick={() => setToggle(!toggle)} />
+            <Plus onClick={() => setToggle(!toggle)} />
+          )}
+          {/* </IconWrapper> */}
           <Title>
             Yangi maxsulot <br /> qo'shish
           </Title>
-              <Border />
-          <Wrapinput>
-            <Wrapput>
-              <div className="input">
-                <Mintext>Qidirish</Mintext>
-                <Search />
-              </div>
-            </Wrapput>
-          </Wrapinput>
+          <Border />
+          <Wrapinput placeholder="Qidirish"></Wrapinput>
+          <Search />
           <Filtered>
             <Filter>
               <Filtericon />

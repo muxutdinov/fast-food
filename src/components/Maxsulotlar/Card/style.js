@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import { ReactComponent as bred } from "../../../assets/icons/bred.svg";
 import { ReactComponent as yashik } from "../../../assets/icons/yashik.svg";
 import { ReactComponent as sok } from "../../../assets/icons/sok.svg";
@@ -26,7 +25,7 @@ export const WrapperCon = styled.div`
   justify-content: space-around;
   align-items: center;
 `;
-export const Iconbir = styled(bred)`
+export const Icon = styled.img`
   margin-right: 40px;
   width: 40px;
   height: 40px;

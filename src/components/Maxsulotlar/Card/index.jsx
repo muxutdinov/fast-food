@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Maxsulot } from "../MaxContext";
+
 import {
   Container,
   WrapperCon,
-  Iconbir,
+  Icon,
   Wraptext,
   Iconswrap,
   Icones,
@@ -20,7 +21,7 @@ export const Card = (props) => {
     <>
       <Container>
         <WrapperCon>
-          <Iconbir />
+          <Icon src={props.data.img} />
           <Wraptext>{props.data.name}</Wraptext>
         </WrapperCon>
         <WrapperCon>

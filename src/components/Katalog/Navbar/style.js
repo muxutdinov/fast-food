@@ -2,15 +2,18 @@ import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as filter } from "../../../assets/icons/filter.svg";
 import { ReactComponent as search } from "../../../assets/icons/search.svg";
+import { ReactComponent as x } from "../../../assets/icons/x.svg";
 
 export const Container = styled.div`
   position: sticky;
+  top: 0;
   display: flex;
   width: 1115px;
   height: 70px;
   background: #ffffff;
 `;
 export const Wrapper = styled.div`
+  position: relative;
   padding: 22px 40px;
   height: 70px;
   background: white;
@@ -30,6 +33,17 @@ export const Plus = styled(plus)`
   cursor: pointer;
   margin-right: 14px;
 `;
+export const Pluss = styled(x)`
+  padding: 11px;
+  background: #20d472;
+  width: 46px;
+  height: 46px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 14px;
+`;
 
 export const Title = styled.pre`
   font-weight: 900;
@@ -38,8 +52,11 @@ export const Title = styled.pre`
   line-height: 16px;
   color: #2d3a45;
 `;
-export const Wrapinput = styled.div`
+export const Wrapinput = styled.input`
+  padding: 10px;
+  outline: none;
   margin-left: 80px;
+  border: none;
   width: 280px;
   height: 40px;
   background: #edeff3;
@@ -68,6 +85,9 @@ export const Mintext = styled.div`
 `;
 
 export const Search = styled(search)`
+  position: absolute;
+  left: 350px;
+  bottom: 26px;
   width: 16px;
   height: 16px;
   margin-left: 180px;
