@@ -1,0 +1,60 @@
+export const MaxsuCards = {
+  maxsulotlar: [
+    {
+      id: 1,
+      name: "Lavash mini",
+      title: "Lavash",
+      narx: "12.000 So'm",
+      kategorya: "mini",
+    },
+    {
+      id: 2,
+      name: "Lavash Big",
+      title: "Burger",
+      narx: "22.000 So'm",
+      kategorya: "Big",
+    },
+    {
+      id: 3,
+      name: "Chizburger",
+      title: "burger",
+      narx: "33.000 So'm",
+      kategorya: "narmal",
+    },
+    {
+      id: 4,
+      name: "Very big",
+      title: "Lavash",
+      narx: "42.000 So'm",
+      kategorya: "big",
+    },
+    {
+      id: 5,
+      name: "Lavash mini",
+      title: "Lavash",
+      narx: "12.000 So'm",
+      kategorya: "mini",
+    },
+    {
+      id: 6,
+      name: "Lavash Big",
+      title: "Burger",
+      narx: "22.000 So'm",
+      kategorya: "Big",
+    },
+    {
+      id: 7,
+      name: "Chizburger",
+      title: "burger",
+      narx: "33.000 So'm",
+      kategorya: "narmal",
+    },
+    {
+      id: 8,
+      name: "Very big",
+      title: "Lavash",
+      narx: "42.000 So'm",
+      kategorya: "big",
+    },
+  ],
+};

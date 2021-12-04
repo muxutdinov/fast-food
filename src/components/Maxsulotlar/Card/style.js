@@ -26,7 +26,7 @@ export const WrapperCon = styled.div`
   justify-content: space-around;
   align-items: center;
 `;
-export const Iconbir = styled(kokat)`
+export const Iconbir = styled(bred)`
   margin-right: 40px;
   width: 40px;
   height: 40px;

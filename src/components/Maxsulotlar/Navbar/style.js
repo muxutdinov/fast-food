@@ -5,6 +5,7 @@ import { ReactComponent as search } from "../../../assets/icons/search.svg";
 
 export const Container = styled.div`
   position: sticky;
+  top: 0;
   display: flex;
   width: 1115px;
   height: 70px;

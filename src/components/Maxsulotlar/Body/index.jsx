@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../Card";
+import { Maxsulot } from "../MaxContext";
 import {
   Top,
   Topwrapbir,
@@ -10,6 +11,7 @@ import {
   Border,
 } from "./style";
 export const Body = () => {
+  const [data, setData] = useContext(Maxsulot);
   return (
     <>
       <Top>
@@ -23,14 +25,9 @@ export const Body = () => {
         <Border />
         <Topwrapbesh>ACTION</Topwrapbesh>
       </Top>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      {data.map((value) => {
+        return <Card key={value.id} data={value} />;
+      })}
     </>
   );
 };

@@ -1,5 +1,5 @@
-
-import React from "react";
+import React, { useContext } from "react";
+import { Maxsulot } from "../MaxContext";
 import {
   Container,
   WrapperCon,
@@ -10,22 +10,27 @@ import {
   Icontwo,
   Iconone,
 } from "./style";
-export const Card = () => {
+
+export const Card = (props) => {
+  const [data, setData] = useContext(Maxsulot);
+  const onDelete = (e) => {
+    setData((prev) => prev.filter((value) => value.id !== e));
+  };
   return (
     <>
       <Container>
         <WrapperCon>
           <Iconbir />
-          <Wraptext>Lavash mini</Wraptext>
+          <Wraptext>{props.data.name}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Wraptext>Lavash</Wraptext>
+          <Wraptext>{props.data.title}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Wraptext>18,000 UZS</Wraptext>
+          <Wraptext>{props.data.narx}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Wraptext>Kichkina</Wraptext>
+          <Wraptext>{props.data.karegorya}</Wraptext>
         </WrapperCon>
         <WrapperCon>
           <Iconswrap>
@@ -33,7 +38,7 @@ export const Card = () => {
               <Icontwo />
             </Icones>
           </Iconswrap>
-          <Iconswrap>
+          <Iconswrap onClick={() => onDelete(props.data.id)}>
             <Icones>
               <Iconone />
             </Icones>

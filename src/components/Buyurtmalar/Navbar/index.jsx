@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbarqosh from "../Navbarqosh/Navbarqosh.jsx";
 import {
   Container,
   Plus,
@@ -13,17 +14,19 @@ import {
 } from "./style";
 
 export const Navbar = (props) => {
+  const [show, setShow] = useState(false);
   const [isTabActive, setIsTabActive] = useState(true);
   const { isActive, setActive } = props;
   return (
     <>
       <Container>
         <Wrapper align order="first">
-          <Plus />
+          <Plus onClick={() => setShow(!show)} />
           <Title>
             Yangi buyurtma <br /> qo'shish
           </Title>
         </Wrapper>
+        {show ? <Navbarqosh onClick={() => setShow(!show)} /> : ""}
         <Wrapper order="second">
           <Tab active={isTabActive}>
             <Tab.Item
