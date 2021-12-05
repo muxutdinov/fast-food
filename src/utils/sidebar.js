@@ -4,6 +4,7 @@ import Xaritaa from "../page/Xarita";
 import Maxsulotlar from "../page/Maxsulotlar";
 import Xisobots from "../page/Xisobot";
 import Catalog from "../page/Katalog";
+import Mijozlarr from "../page/Mijozlar";
 //=== Icons
 import { ReactComponent as buyurtmalar } from "../assets/icons/buyurtmalar.svg";
 import { ReactComponent as filial } from "../assets/icons/filial.svg";
@@ -52,7 +53,7 @@ export const sidebar = [
     id: 5,
     path: "/mijozlar",
     title: "Mijozlar",
-    Component: Generic,
+    Component: Mijozlarr,
     Icon: mijozlar,
     hidden: false,
   },
