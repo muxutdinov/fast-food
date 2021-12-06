@@ -33,7 +33,7 @@ export const Topwrapikki = styled.div`
 `;
 export const Topwrapuch = styled.div`
   font-weight: 900;
-  width: 60px;
+  width: 150px;
   height: 13px;
   font-family: SFProDisplay;
   font-size: 11px;
