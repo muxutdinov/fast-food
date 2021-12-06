@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Card from "../Card";
-import { Maxsulot } from "../MaxContext";
+// import Card from "../Card/index";
+// import { KategoryalarContext } from "../KategoryalarContext";
 import {
   Top,
   Topwrapbir,
@@ -9,9 +9,9 @@ import {
   Topwrapuch,
   Topwrapbesh,
   Border,
-} from "./style";
-export const Body = () => {
-  const [data, setData] = useContext(Maxsulot);
+} from "./BodyStyle";
+export const KategoryaBody = () => {
+  // const [data, setData] = useContext(Maxsulot);
   return (
     <>
       <Top>
@@ -21,14 +21,12 @@ export const Body = () => {
         <Border />
         <Topwrapuch>NARXI</Topwrapuch>
         <Border />
-        <Topwraptort>QOSHIMCHA</Topwraptort>
-        <Border />
         <Topwrapbesh>Delete</Topwrapbesh>
       </Top>
-      {data.map((value) => {
+      {/* {data.map((value) => {
         return <Card key={value.id} data={value} />;
-      })}
+      })} */}
     </>
   );
 };
-export default Body;
+export default KategoryaBody;

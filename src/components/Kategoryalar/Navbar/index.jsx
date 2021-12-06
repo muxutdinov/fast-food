@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbarqosh from "../Navbarqosh/Navbarqosh";
 
 import {
   Container,
@@ -25,7 +24,6 @@ export const Navbar = () => {
       <Container>
         <Wrapper>
           <Plus onClick={() => setToggle(!toggle)} />
-          {toggle ? <Navbarqosh /> : ""}
           <Title>
             Yangi maxsulot <br /> qo'shish
           </Title>

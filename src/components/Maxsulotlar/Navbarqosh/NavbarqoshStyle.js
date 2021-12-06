@@ -27,8 +27,9 @@ export const Right = styled.div`
 `;
 export const RightWrapper = styled.div``;
 export const Title = styled.div`
-  width: 152px;
+  width: 200px;
   height: 18px;
+  line-height: 50px;
   font-family: SFProDisplay;
   font-size: 16px;
   line-height: 18px;
@@ -36,7 +37,7 @@ export const Title = styled.div`
   color: #2d3a45;
 `;
 export const Text = styled.div`
-  width: 100px;
+  width: 150px;
   height: 18px;
   font-family: SFProDisplay;
   font-size: 12px;

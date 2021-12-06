@@ -61,6 +61,7 @@ export const Wraptext = styled.div`
   color: #2d3a45;
 `;
 export const Iconswrap = styled.div`
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +80,9 @@ export const Icones = styled.div`
   background: #ffffff;
   box-shadow: 0px 2px 2px rgba(174, 176, 181, 0.314986);
   border-radius: 16px;
+  .maxsulotDelete {
+    color: red;
+  }
 `;
 export const Iconone = styled(trash)`
   cursor: pointer;

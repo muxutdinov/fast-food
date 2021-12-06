@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Maxsulot } from "../MaxContext";
+import { DeleteOutline } from "@material-ui/icons";
 
 import {
   Container,
@@ -34,14 +35,9 @@ export const Card = (props) => {
           <Wraptext>{props.data.karegorya}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Iconswrap>
-            <Icones>
-              <Icontwo />
-            </Icones>
-          </Iconswrap>
           <Iconswrap onClick={() => onDelete(props.data.id)}>
             <Icones>
-              <Iconone />
+              <DeleteOutline className="maxsulotDelete"/>
             </Icones>
           </Iconswrap>
         </WrapperCon>

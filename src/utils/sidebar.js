@@ -14,6 +14,7 @@ import { ReactComponent as maxsulotlar } from "../assets/icons/maxsulotlar.svg";
 import { ReactComponent as mijozlar } from "../assets/icons/mijozlar.svg";
 import { ReactComponent as hodimlar } from "../assets/icons/settings.svg";
 import { ReactComponent as settings } from "../assets/icons/settings.svg";
+import Kategorya from "../page/Kategoryalar";
 
 export const sidebar = [
   {
@@ -37,7 +38,7 @@ export const sidebar = [
     id: 3,
     path: "/katigoriya",
     title: "Katigoriya",
-    Component: Generic,
+    Component: Kategorya,
     Icon: katigoriya,
     hidden: false,
   },
