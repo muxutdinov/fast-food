@@ -93,7 +93,7 @@ export const Mintext = styled.div`
 
 export const Search = styled(search)`
   position: absolute;
-  left: 350px;
+  left: 330px;
   bottom: 26px;
   width: 16px;
   height: 16px;

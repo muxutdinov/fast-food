@@ -1,4 +1,9 @@
-export const Rows = [
+import { createContext, useState } from "react";
+
+export const MijozlarContext = createContext();
+
+const MijozlarContextPravider = ({ children }) => {
+  const [data, setData] = useState([
     { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
     { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
     { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
@@ -12,4 +17,11 @@ export const Rows = [
     { id: 11, lastName: "Lannister", firstName: "Cersei", age: 42 },
     { id: 12, lastName: "Lannister", firstName: "Jaime", age: 45 },
     { id: 13, lastName: "Stark", firstName: "Arya", age: 16 },
-  ];
+  ]);
+  return (
+    <MijozlarContext.Provider value={[data, setData]}>
+      {children}
+    </MijozlarContext.Provider>
+  );
+};
+export default MijozlarContextPravider;

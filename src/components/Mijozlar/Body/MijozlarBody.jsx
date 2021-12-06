@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext} from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { ActionWrapper, Container, Editbtn } from "./MijozlarBodyStyle";
 import { DeleteOutline } from "@material-ui/icons";
-import { Rows } from "./BodyData";
+import { MijozlarContext } from "../MijozlarContext";
+
 
 const MijozlarBody = () => {
-  const [data, setData] = useState(Rows);
+  const [data, setData] = useContext(MijozlarContext);
 
   const OnDelete = (id) => {
     setData(data.filter((value) => value.id !== id));
@@ -33,13 +34,13 @@ const MijozlarBody = () => {
     },
     {
       field: "action",
-      headerName: "Action",
+      headerName: "Delete",
       width: 150,
       renderCell: (params) => {
         return (
           <>
             <ActionWrapper>
-              <Editbtn>Edit</Editbtn>
+              {/* <Editbtn>Edit</Editbtn> */}
               <div className="delete" onClick={() => OnDelete(params.row.id)}>
                 <DeleteOutline />
               </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import  Navbarqosh  from "../Navbarqosh/Navbarqosh.jsx";
 import {
   Container,
   Wrapper,
@@ -23,18 +23,10 @@ export const Navbar = () => {
     <>
       <Container>
         <Wrapper>
-          {/* <IconWrapper> */}
-          {toggle ? (
-            <li>
-              <i class="fa-li fa fa-spinner fa-spin"></i>as bullets
-            </li>
-          ) : (
-            // <Pluss onClick={() => setToggle(!toggle)} />
-            <Plus onClick={() => setToggle(!toggle)} />
-          )}
-          {/* </IconWrapper> */}
+          <Plus onClick={() => setToggle(!toggle)} />
+          {toggle ? <Navbarqosh /> : ""}
           <Title>
-            Yangi maxsulot <br /> qo'shish
+            Yangi mijoz <br /> qo'shish
           </Title>
           <Border />
           <Wrapinput placeholder="Qidirish"></Wrapinput>

@@ -29,7 +29,6 @@ padding: 11px;
   cursor: pointer;
   margin-right: 14px;
   `;
-
 export const Title = styled.pre`
 font-weight: 900;
   font-family: SFProDisplay;
