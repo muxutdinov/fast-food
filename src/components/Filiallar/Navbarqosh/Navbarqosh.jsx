@@ -12,29 +12,29 @@ import {
   Saqlashbtn,
   SaqlashText,
 } from "./NavbarqoshStyle";
-import { Maxsulot } from "../MaxContext";
+import { FiliallarContext } from "../FiliallarCon";
 const Navbarqosh = () => {
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
   const [narx, setNarx] = useState("");
   const [kategorya, setKategorya] = useState("");
-  const [data, setData] = useContext(Maxsulot);
+  const [data, setData] = useContext(FiliallarContext);
   const onAdd = () => {
     if (name.length !== 0 && title.length !== 0 && narx.length !== 0) {
       setData((prev) => [
         ...prev,
         {
-          id: data.length + 1,
+          id: Date.now(),
           name: name,
           title: title,
           narx: narx,
           kategorya: kategorya,
         },
       ]);
-      setName("")
-      setTitle("")
-      setNarx("")
-      setKategorya("")
+      setName("");
+      setTitle("");
+      setNarx("");
+      setKategorya("");
     }
   };
   return (
@@ -42,22 +42,22 @@ const Navbarqosh = () => {
       <Left></Left>
       <Right>
         <RightWrapper>
-          <Title>Yangi maxsulot qo'shish</Title>
+          <Title>Yangi Filial qo'shish</Title>
         </RightWrapper>
         <RightWrapper>
-          <Text>Maxsulot nomi</Text>
+          <Text>Filial nomi uz</Text>
           <Input value={name} onChange={(e) => setName(e.target.value)} />
         </RightWrapper>
         <RightWrapper>
-          <Text>Kategorya</Text>
+          <Text>Filial nomi ru</Text>
           <Input value={title} onChange={(e) => setTitle(e.target.value)} />
         </RightWrapper>
         <RightWrapper>
-          <Text>Narxi</Text>
+          <Text>Ish vaqti</Text>
           <Input value={narx} onChange={(e) => setNarx(e.target.value)} />
         </RightWrapper>
         <RightWrapper>
-          <Text>Qo'shimcha malumot</Text>
+          <Text>Filial mo'jal</Text>
           <Input
             value={kategorya}
             onChange={(e) => setKategorya(e.target.value)}

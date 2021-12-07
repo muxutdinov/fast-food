@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbarqosh from "../Navbarqosh/Navbarqosh";
 
 import {
   Container,
@@ -27,6 +28,9 @@ export const Navbar = () => {
           <Title>
             Yangi  filial <br /> qo'shish
           </Title>
+          {
+            toggle ? <Navbarqosh/> : ""
+          }
           <Border />
           <Wrapinput placeholder="Qidirish"></Wrapinput>
           <Search />

@@ -52,8 +52,8 @@ export const Iconbesh = styled(kokat)`
   border-radius: 50%;
 `;
 export const Wraptext = styled.div`
-  /* margin-right: ${({ left }) => (left ? "50px" : "")}; */
-  width: 65px;
+  margin-right: ${({ left }) => (left ? "50px" : "")};
+  width: 105px;
   height: 16px;
   font-family: SFProDisplay;
   font-size: 13px;

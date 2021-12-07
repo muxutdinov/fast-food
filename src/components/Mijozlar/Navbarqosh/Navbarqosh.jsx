@@ -19,21 +19,21 @@ const Navbarqosh = () => {
   const [age, setAge] = useState("");
   const [data, setData] = useContext(MijozlarContext);
   const onAdd = () => {
-    if ((name.length !== 0 && lastName.length !== 0, age.length !== 0)) {
+    if (name.length !== 0 && lastName.length !== 0 && age.length !== 0) {
       setData((prev) => [
         ...prev,
         {
-          id: data.length + 1,
+          id: Date.now(),
           lastName: lastName,
           firstName: name,
           age: age,
         },
-        // setName(""),
-        // setLastName(""),
-        // setAge("")
-    ]);
-}
-};
+      ]);
+      setName("");
+      setLastName("");
+      setAge("");
+    }
+  };
   return (
     <Container>
       <Left>Left</Left>

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { KategoryaCon } from "../KategoryaContext";
+import { FiliallarContext } from "../FiliallarCon";
 import { DeleteOutline } from "@material-ui/icons";
 
 import {
@@ -14,7 +14,7 @@ import {
 } from "./style";
 
 export const Card = (props) => {
-  const [data, setData] = useContext(KategoryaCon);
+  const [data, setData] = useContext(FiliallarContext);
   const onDelete = (e) => {
     setData((prev) => prev.filter((value) => value.id !== e));
   };
@@ -22,17 +22,16 @@ export const Card = (props) => {
     <>
       <Container>
         <WrapperCon>
-          {/* <Icon src={props.data.img} /> */}
-          <Wraptext>{props.data.nameuz}</Wraptext>
+          <Wraptext>{props.data.name}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Wraptext>{props.data.nameru}</Wraptext>
+          <Wraptext>{props.data.title}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Wraptext>{props.data.text}</Wraptext>
+          <Wraptext>{props.data.narx}</Wraptext>
         </WrapperCon>
         <WrapperCon>
-          <Wraptext>{props.data.karegorya}</Wraptext>
+          <Wraptext>{props.data.kategorya}</Wraptext>
         </WrapperCon>
         <WrapperCon>
           <Iconswrap onClick={() => onDelete(props.data.id)}>
