@@ -26,7 +26,7 @@ export const Navbar = (props) => {
             Yangi buyurtma <br /> qo'shish
           </Title>
         </Wrapper>
-        {show ? <Navbarqosh onClick={() => setShow(false)} /> : ""}
+        {/* {show ? <Navbarqosh onClick={() => setShow(false)} /> : ""} */}
         <Wrapper order="second">
           <Tab active={isTabActive}>
             <Tab.Item

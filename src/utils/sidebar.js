@@ -6,6 +6,8 @@ import Xisobots from "../page/Xisobot";
 import Catalog from "../page/Katalog";
 import Mijozlarr from "../page/Mijozlar";
 import Filiallarr from '../page/Filiallar'
+import Kategorya from "../page/Kategoryalar";
+import Hodimlarr from "../page/Hodimlarr";
 //=== Icons
 import { ReactComponent as buyurtmalar } from "../assets/icons/buyurtmalar.svg";
 import { ReactComponent as filial } from "../assets/icons/filial.svg";
@@ -15,7 +17,6 @@ import { ReactComponent as maxsulotlar } from "../assets/icons/maxsulotlar.svg";
 import { ReactComponent as mijozlar } from "../assets/icons/mijozlar.svg";
 import { ReactComponent as hodimlar } from "../assets/icons/settings.svg";
 import { ReactComponent as settings } from "../assets/icons/settings.svg";
-import Kategorya from "../page/Kategoryalar";
 
 export const sidebar = [
   {
@@ -71,7 +72,7 @@ export const sidebar = [
     id: 7,
     path: "/hodimlar",
     title: "Hodimlar",
-    Component: Generic,
+    Component: Hodimlarr,
     Icon: hodimlar,
     hidden: false,
   },

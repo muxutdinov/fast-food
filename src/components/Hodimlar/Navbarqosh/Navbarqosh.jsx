@@ -12,12 +12,12 @@ import {
   Saqlashbtn,
   SaqlashText,
 } from "./Navbarqosh";
-import { BuyurtmalarContext } from "../../context/Buyurtmalar/buyurtmalar";
+import { HodimlarContext } from "../HodimlarContext";
 const Navbarqosh = () => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState("");
-  const [data, setData] = useContext(BuyurtmalarContext);
+  const [data, setData] = useContext(HodimlarContext);
   const onAdd = () => {
     if (name.length !== 0 && lastName.length !== 0 && age.length !== 0) {
       setData((prev) => [
