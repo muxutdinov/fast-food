@@ -6,7 +6,7 @@ const FeaturedInto = () => {
   return (
     <div className="Featured">
       <div className="FeaturedItem">
-        <span className="featuredTitle">Revanue</span>
+        <span className="featuredTitle">Terminal</span>
         <div className="featuredManyContainer">
           <span className="featuredMoney">$5,543</span>
           <span className="featuredMoneyRate">
@@ -16,7 +16,7 @@ const FeaturedInto = () => {
         <span className="featuredSub">Compared to last month</span>
       </div>
       <div className="FeaturedItem">
-        <span className="featuredTitle">Sales</span>
+        <span className="featuredTitle">Payme</span>
         <div className="featuredManyContainer">
           <span className="featuredMoney">$2,123</span>
           <span className="featuredMoneyRate">
@@ -26,7 +26,7 @@ const FeaturedInto = () => {
         <span className="featuredSub">Compared to last month</span>
       </div>
       <div className="FeaturedItem">
-        <span className="featuredTitle">Cost</span>
+        <span className="featuredTitle">Naqt</span>
         <div className="featuredManyContainer">
           <span className="featuredMoney">$9,321</span>
           <span className="featuredMoneyRate">

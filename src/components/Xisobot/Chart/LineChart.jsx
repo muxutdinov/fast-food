@@ -3,46 +3,46 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const data = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: 'Dushanba',
+    naqt: 4000,
+    terminal: 2400,
+    payme: 2400,
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: 'Seshanba',
+    naqt: 3000,
+    terminal: 1398,
+    payme: 2210,
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: 'Chorshanba',
+    naqt: 2000,
+    terminal: 9800,
+    payme: 2290,
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: 'Payshanba',
+    naqt: 2780,
+    terminal: 3908,
+    payme: 2000,
   },
   {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    name: 'Juma',
+    naqt: 1890,
+    terminal: 4800,
+    payme: 2181,
   },
   {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    name: 'Shanba',
+    naqt: 2390,
+    terminal: 3800,
+    payme: 2500,
   },
   {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: 'Yakshanba',
+    naqt: 3490,
+    terminal: 4300,
+    payme: 2100,
   },
 ];
 
@@ -68,8 +68,9 @@ export default class Example extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="terminal" stroke="orange" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="naqt" stroke="green" />
+          <Line type="monotone" dataKey="payme" stroke="#09ffde" />
         </LineChart>
       </ResponsiveContainer>
     );

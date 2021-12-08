@@ -1,11 +1,12 @@
 .Featured {
+  margin-left: 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .FeaturedItem {
   flex: 1;
-  margin: 10px 20px;
+  margin: 10px 30px;
   padding: 30px;
   border-radius: 10px;
   cursor: pointer;
