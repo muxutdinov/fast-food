@@ -1,22 +1,13 @@
 import React from "react";
 import { Container, Wrapper } from "./style";
-import LineChart from "../Chart/LineChart";
+import FeaturedInfo from '../FeaturedInfo/FeaturedInfo'
+import Chart from '../Chart/Chart'
 
 export const Body = () => {
   return (
     <Container>
-      <Wrapper>
-        <LineChart />
-        <LineChart />
-      </Wrapper>
-      <Wrapper>
-        <LineChart />
-        <LineChart />
-      </Wrapper>
-      <Wrapper>
-        <LineChart />
-        <LineChart />
-      </Wrapper>
+      <FeaturedInfo/>
+      <Chart/>
     </Container>
   );
 };
