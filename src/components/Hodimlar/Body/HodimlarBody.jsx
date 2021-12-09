@@ -5,7 +5,7 @@ import { DeleteOutline } from "@material-ui/icons";
 import { HodimlarContext } from "../HodimlarContext";
 
 
-const MijozlarBody = () => {
+const HodimlarBody = () => {
   const [data, setData] = useContext(HodimlarContext);
 
   const OnDelete = (id) => {
@@ -64,4 +64,4 @@ const MijozlarBody = () => {
   );
 };
 
-export default MijozlarBody;
+export default HodimlarBody;

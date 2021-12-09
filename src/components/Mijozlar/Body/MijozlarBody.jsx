@@ -1,9 +1,8 @@
-import React, { useState, useContext} from "react";
+import React, { useContext } from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { ActionWrapper, Container, Editbtn } from "./MijozlarBodyStyle";
+import { ActionWrapper, Container } from "./MijozlarBodyStyle";
 import { DeleteOutline } from "@material-ui/icons";
 import { MijozlarContext } from "../MijozlarContext";
-
 
 const MijozlarBody = () => {
   const [data, setData] = useContext(MijozlarContext);
@@ -13,24 +12,20 @@ const MijozlarBody = () => {
   };
   const columns = [
     { field: "id", headerName: "ID", width: 100 },
-    { field: "firstName", headerName: "First name", width: 200 },
-    { field: "lastName", headerName: "Last name", width: 200 },
+    { field: "name", headerName: "MIJOZ ISMI", width: 170 },
+    { field: "tel", headerName: "TELEFON RAQAM", width: 200 },
     {
-      field: "age",
-      headerName: "Age",
+      field: "soni",
+      headerName: "BUYURTMALAR SONI",
       type: "number",
-      width: 100,
+      width: 240,
     },
     {
-      field: "fullName",
-      headerName: "Full name",
+      field: "status",
+      headerName: " STATUS",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
-      width: 270,
-      valueGetter: (params) =>
-        `${params.getValue(params.id, "firstName") || ""} ${
-          params.getValue(params.id, "lastName") || ""
-        }`,
+      width: 200,
     },
     {
       field: "action",
@@ -40,7 +35,6 @@ const MijozlarBody = () => {
         return (
           <>
             <ActionWrapper>
-              {/* <Editbtn>Edit</Editbtn> */}
               <div className="delete" onClick={() => OnDelete(params.row.id)}>
                 <DeleteOutline />
               </div>

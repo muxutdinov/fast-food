@@ -15,23 +15,24 @@ import {
 import { MijozlarContext } from "../MijozlarContext";
 const Navbarqosh = () => {
   const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [age, setAge] = useState("");
+  const [tel, setTel] = useState("");
+  const [soni, setSoni] = useState("");
   const [data, setData] = useContext(MijozlarContext);
   const onAdd = () => {
-    if (name.length !== 0 && lastName.length !== 0 && age.length !== 0) {
+    if (name.length !== 0 && tel.length !== 0 && soni.length !== 0) {
       setData((prev) => [
         ...prev,
         {
           id: Date.now(),
-          lastName: lastName,
-          firstName: name,
-          age: age,
+          name: name,
+          tel: tel,
+          soni: soni,
+          status:"Active"
         },
       ]);
       setName("");
-      setLastName("");
-      setAge("");
+      setTel("");
+      setSoni("");
     }
   };
   return (
@@ -46,15 +47,15 @@ const Navbarqosh = () => {
           <Input value={name} onChange={(e) => setName(e.target.value)} />
         </RightWrapper>
         <RightWrapper>
-          <Text>Mijoz familyasi</Text>
+          <Text>telefon raqami</Text>
           <Input
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            value={tel}
+            onChange={(e) => setTel(e.target.value)}
           />
         </RightWrapper>
         <RightWrapper>
-          <Text>Mijoz yoshi</Text>
-          <Input value={age} onChange={(e) => setAge(e.target.value)} />
+          <Text>buyurtma soni</Text>
+          <Input value={soni} onChange={(e) => setSoni(e.target.value)} />
         </RightWrapper>
         <Saqlashbtn onClick={onAdd}>
           <SaqlashText>Saqlash</SaqlashText>
