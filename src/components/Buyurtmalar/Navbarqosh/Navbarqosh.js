@@ -27,6 +27,7 @@ export const Right = styled.div`
 `;
 export const RightWrapper = styled.div``;
 export const Title = styled.div`
+  margin-left:20px;
   width: 152px;
   height: 18px;
   font-family: SFProDisplay;

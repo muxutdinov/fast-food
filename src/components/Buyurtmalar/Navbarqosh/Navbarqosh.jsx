@@ -39,7 +39,7 @@ const Navbarqosh = () => {
       <Left>Left</Left>
       <Right>
         <RightWrapper>
-          <Title>Yangi mijoz qo'shish</Title>
+          <Title>Yangi buyurtma qo'shish</Title>
         </RightWrapper>
         <RightWrapper>
           <Text>Mijoz ismi</Text>

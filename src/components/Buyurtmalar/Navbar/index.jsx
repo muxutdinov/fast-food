@@ -14,19 +14,19 @@ import {
 } from "./style";
 
 export const Navbar = (props) => {
-  const [show, setShow] = useState(false);
+  const [toggle, setToggle] = useState(false);
   const [isTabActive, setIsTabActive] = useState(true);
   const { isActive, setActive } = props;
   return (
     <>
       <Container>
         <Wrapper align order="first">
-          <Plus onClick={() => setShow(!show)} />
+          <Plus onClick={() => setToggle(!toggle)} />
+        {toggle ? <Navbarqosh /> : ""}
           <Title>
             Yangi buyurtma <br /> qo'shish
           </Title>
         </Wrapper>
-        {/* {show ? <Navbarqosh onClick={() => setShow(false)} /> : ""} */}
         <Wrapper order="second">
           <Tab active={isTabActive}>
             <Tab.Item
