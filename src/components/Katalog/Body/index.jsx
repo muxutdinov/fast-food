@@ -1,11 +1,13 @@
-import React from "react";
-import FileUploadPage from "./FileUploadPage";
+import React from 'react'
+import CollapsibleTable from './Table'
 
-const Body = () => {
+const BodyKatalog = () => {
   return (
-    <div>Body</div>
-    // <FileUploadPage/>
-  );
-};
+    <div>
+      <h1>Katalog</h1>
+      <CollapsibleTable/>
+    </div>
+  )
+}
 
-export default Body;
+export default BodyKatalog

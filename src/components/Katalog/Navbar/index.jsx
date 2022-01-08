@@ -22,7 +22,7 @@ export const Navbar = () => {
     <>
       <Container>
         <Wrapper>
-          {toggle ? <Pluss /> : <Plus onClick={() => setToggle(!toggle)} />}
+          <Plus/>
           <Title>
             Yangi maxsulot <br /> qo'shish
           </Title>

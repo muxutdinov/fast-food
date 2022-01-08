@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as filter } from "../../../assets/icons/filter.svg";
 import { ReactComponent as search } from "../../../assets/icons/search.svg";
-import { ReactComponent as x } from "../../../assets/icons/x.svg";
 
 export const Container = styled.div`
   position: sticky;
@@ -33,17 +32,17 @@ export const Plus = styled(plus)`
   cursor: pointer;
   margin-right: 14px;
 `;
-export const Pluss = styled(x)`
-  padding: 11px;
-  background: #20d472;
-  width: 46px;
-  height: 46px;
-  min-width: 36px;
-  min-height: 36px;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-right: 14px;
-`;
+// export const Pluss = styled(x)`
+//   padding: 11px;
+//   background: #20d472;
+//   width: 46px;
+//   height: 46px;
+//   min-width: 36px;
+//   min-height: 36px;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   margin-right: 14px;
+// `;
 
 export const Title = styled.pre`
   font-weight: 900;
