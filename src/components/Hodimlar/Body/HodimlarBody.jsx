@@ -3,6 +3,10 @@ import { DataGrid } from "@mui/x-data-grid";
 import { ActionWrapper, Container, Editbtn } from "./HodimlarBodyStyle";
 import { DeleteOutline } from "@material-ui/icons";
 import { HodimlarContext } from "../HodimlarContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const HodimlarBody = () => {
@@ -10,27 +14,21 @@ const HodimlarBody = () => {
 
   const OnDelete = (id) => {
     setData(data.filter((value) => value.id !== id));
+    toast.success("Karta muvaffaqiyatli o'chirildi!")
   };
   const columns = [
     { field: "id", headerName: "ID", width: 100 },
-    { field: "firstName", headerName: "First name", width: 200 },
-    { field: "lastName", headerName: "Last name", width: 200 },
+    { field: "ism", headerName: "ISM", width: 200 },
+    { field: "familya", headerName: "FAMILYA", width: 200 },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
+      field: "lavozim",
+      headerName: "LAVOZIM",
       width: 100,
     },
     {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 270,
-      valueGetter: (params) =>
-        `${params.getValue(params.id, "firstName") || ""} ${
-          params.getValue(params.id, "lastName") || ""
-        }`,
+      field:'raqam',
+      headerName:'TELEFON RAQAM',
+      width:300
     },
     {
       field: "action",
@@ -52,6 +50,7 @@ const HodimlarBody = () => {
 
   return (
     <Container style={{ height: "695px", width: "100%" }}>
+      <ToastContainer/>
       <DataGrid
         disableSelectionOnClick
         rows={data}

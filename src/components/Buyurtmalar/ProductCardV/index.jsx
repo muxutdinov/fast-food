@@ -1,6 +1,8 @@
 import React from "react";
 import Done from "../../Generic/Dane";
 import Cancel from "../../Generic/Cancel";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   Container,
   MinWrapbir,
@@ -41,6 +43,7 @@ export const ProductCard = ({ value }) => {
 
   const onCancel = (value) => {
     dispatch({ type: "delete", payload: value });
+    toast.success("Karta muvaffaqiyatli o'chirildi!")
   };
   const onDone = (value) => {
     console.log(value, "done");
@@ -48,6 +51,7 @@ export const ProductCard = ({ value }) => {
   return (
     <>
       <Container>
+        <ToastContainer/>
         <Wrapper>
           <MinWrapbir>
             <Wrapbir align>

@@ -37,7 +37,7 @@ export const Title = styled.div`
   color: #2d3a45;
 `;
 export const Text = styled.div`
-  width: 100px;
+  width: 150px;
   height: 18px;
   font-family: SFProDisplay;
   font-size: 12px;

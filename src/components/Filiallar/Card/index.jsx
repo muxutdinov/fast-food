@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { FiliallarContext } from "../FiliallarCon";
 import { DeleteOutline } from "@material-ui/icons";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import {
   Container,
@@ -17,10 +19,12 @@ export const Card = (props) => {
   const [data, setData] = useContext(FiliallarContext);
   const onDelete = (e) => {
     setData((prev) => prev.filter((value) => value.id !== e));
+    toast.success("Karta muvaffaqiyatli o'chirildi!")
   };
   return (
     <>
       <Container>
+      <ToastContainer/>
         <WrapperCon>
           <Wraptext>{props.data.name}</Wraptext>
         </WrapperCon>

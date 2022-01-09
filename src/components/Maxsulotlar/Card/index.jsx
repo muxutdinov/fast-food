@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { Maxsulot } from "../MaxContext";
 import { DeleteOutline } from "@material-ui/icons";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import {
   Container,
@@ -17,10 +20,12 @@ export const Card = (props) => {
   const [data, setData] = useContext(Maxsulot);
   const onDelete = (e) => {
     setData((prev) => prev.filter((value) => value.id !== e));
+    toast.success("Karta muvaffaqiyatli o'chirildi!")
   };
   return (
     <>
       <Container>
+      <ToastContainer/>
         <WrapperCon>
           <Icon src={props.data.img} />
           <Wraptext>{props.data.name}</Wraptext>

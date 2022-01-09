@@ -10,7 +10,7 @@ export const Container = styled.div`
   z-index: 999;
 `;
 export const Wrapper = styled.div`
-  padding: 22px 40px;
+  padding: 22px 30px;
   height: 70px;
   background: white;
   display: flex;

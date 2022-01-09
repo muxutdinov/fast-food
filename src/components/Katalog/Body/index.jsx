@@ -1,10 +1,10 @@
 import React from 'react'
+import './Body.css'
 import CollapsibleTable from './Table'
 
 const BodyKatalog = () => {
   return (
-    <div>
-      <h1>Katalog</h1>
+    <div className='KatalogBody'>
       <CollapsibleTable/>
     </div>
   )

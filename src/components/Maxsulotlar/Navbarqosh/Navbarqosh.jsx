@@ -1,4 +1,7 @@
 import React, { useContext, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
   Container,
   Left,
@@ -35,10 +38,12 @@ const Navbarqosh = () => {
       setTitle("")
       setNarx("")
       setKategorya("")
+      toast.success("Karta muvaffaqiyatli qo'shildi!")
     }
   };
   return (
     <Container>
+       <ToastContainer/>
       <Left></Left>
       <Right>
         <RightWrapper>
@@ -64,7 +69,7 @@ const Navbarqosh = () => {
           />
         </RightWrapper>
         <RightWrapper>
-          <Text>Maxsulot rasmini yuklash</Text>
+          {/* <Text>Maxsulot rasmini yuklash</Text> */}
           {/* <Input value={narx} onChange={(e) => setNarx(e.target.value)} /> */}
         </RightWrapper>
         <Saqlashbtn onClick={onAdd}>

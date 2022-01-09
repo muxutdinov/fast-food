@@ -3,18 +3,22 @@ import Done from '../../Generic/Dane';
 import Cancel from '../../Generic/Cancel';
 import { Container, Footer, IconWrapper, Info, Timer, Wrapper } from './style';
 import { BuyurtmaContext } from '../../context/Buyurtmalar/buyurtmalar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ProductCard = ({ value }) => {
   const [,dispatch] = BuyurtmaContext();
 
   const onCancel = (value) => {
     dispatch({ type: 'delete', payload: value });
+    toast.success("Karta muvaffaqiyatli o'chirildi!")
   };
   const onDone = (value) => {
     console.log(value, 'done');
   };
   return (
     <Container>
+      <ToastContainer/>
       <Wrapper>
         <Info.OrderID>{value.orderId}</Info.OrderID>
         <IconWrapper>

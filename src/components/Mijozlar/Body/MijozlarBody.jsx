@@ -3,12 +3,16 @@ import { DataGrid } from "@mui/x-data-grid";
 import { ActionWrapper, Container } from "./MijozlarBodyStyle";
 import { DeleteOutline } from "@material-ui/icons";
 import { MijozlarContext } from "../MijozlarContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const MijozlarBody = () => {
   const [data, setData] = useContext(MijozlarContext);
 
   const OnDelete = (id) => {
     setData(data.filter((value) => value.id !== id));
+    toast.success("Karta muvaffaqiyatli o'chirildi!")
   };
   const columns = [
     { field: "id", headerName: "ID", width: 100 },
@@ -47,6 +51,7 @@ const MijozlarBody = () => {
 
   return (
     <Container style={{ height: "695px", width: "100%" }}>
+      <ToastContainer/>
       <DataGrid
         disableSelectionOnClick
         rows={data}

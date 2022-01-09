@@ -1,4 +1,7 @@
 import React, { useContext, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
   Container,
   Left,
@@ -33,6 +36,7 @@ const Navbarqosh = () => {
       setNameuz("")
       setNameru("")
       setText("")
+      toast.success("Karta muvaffaqiyatli qo'shildi!")
     }
   };
   return (

@@ -21,12 +21,29 @@ export const card = {
     {
       id: 2,
       categoria: "yangi",
-
       orderId: 98654,
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Jaxongir Muxutdinov",
+        name: "John",
+        phone: 1233445667,
+      },
+      operator: {
+        name: "Komilova A",
+      },
+      filial: {
+        title: "Fast food",
+        location: "Maksim Gorkiy",
+      },
+    },
+    {
+      id: 3,
+      categoria: "yangi",
+      orderId: 98654,
+      time: new Date(),
+      total: "40,400",
+      user: {
+        name: "Jamshid",
         phone: 1233445667,
       },
       operator: {
@@ -47,7 +64,43 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Jaxongir first",
+        name: "Javlon",
+        phone: 1233445667,
+      },
+      operator: {
+        name: "Komilova A",
+      },
+      filial: {
+        title: "Fast food",
+        location: "Maksim Gorkiy",
+      },
+    },
+    {
+      id: 22,
+      categoria: "qabul",
+      orderId: 1234,
+      time: new Date(),
+      total: "40,400",
+      user: {
+        name: "Akmal",
+        phone: 1233445667,
+      },
+      operator: {
+        name: "Komilova A",
+      },
+      filial: {
+        title: "Fast food",
+        location: "Maksim Gorkiy",
+      },
+    },
+    {
+      id: 23,
+      categoria: "qabul",
+      orderId: 1234,
+      time: new Date(),
+      total: "40,400",
+      user: {
+        name: "Shaxboz",
         phone: 1233445667,
       },
       operator: {
@@ -68,7 +121,7 @@ export const card = {
       time: new Date(),
       total: "40,400",
       user: {
-        name: "Jaxongir second",
+        name: "Azizjon",
         phone: 1233445667,
       },
       operator: {
