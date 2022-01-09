@@ -20,7 +20,7 @@ export const Card = (props) => {
   const [data, setData] = useContext(Maxsulot);
   const onDelete = (e) => {
     setData((prev) => prev.filter((value) => value.id !== e));
-    toast.success("Karta muvaffaqiyatli o'chirildi!")
+    toast.success("Maxsulot muvaffaqiyatli o'chirildi!")
   };
   return (
     <>

@@ -12,7 +12,7 @@ const MijozlarBody = () => {
 
   const OnDelete = (id) => {
     setData(data.filter((value) => value.id !== id));
-    toast.success("Karta muvaffaqiyatli o'chirildi!")
+    toast.success("Mijoz muvaffaqiyatli o'chirildi!")
   };
   const columns = [
     { field: "id", headerName: "ID", width: 100 },

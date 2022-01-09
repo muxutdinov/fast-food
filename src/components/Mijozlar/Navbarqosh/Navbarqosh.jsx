@@ -37,7 +37,7 @@ const Navbarqosh = () => {
       setName("");
       setTel("");
       setSoni("");
-      toast.success("Karta muvaffaqiyatli qo'shildi!")
+      toast.success("Mijoz muvaffaqiyatli qo'shildi!")
     }
   };
   return (

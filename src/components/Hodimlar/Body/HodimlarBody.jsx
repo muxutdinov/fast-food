@@ -14,7 +14,7 @@ const HodimlarBody = () => {
 
   const OnDelete = (id) => {
     setData(data.filter((value) => value.id !== id));
-    toast.success("Karta muvaffaqiyatli o'chirildi!")
+    toast.success("Hodim muvaffaqiyatli o'chirildi!")
   };
   const columns = [
     { field: "id", headerName: "ID", width: 100 },

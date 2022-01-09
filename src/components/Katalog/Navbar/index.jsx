@@ -22,18 +22,18 @@ export const Navbar = () => {
     <>
       <Container>
         <Wrapper>
-          <Plus/>
+          {/* <Plus/> */}
           <Title>
-            Yangi maxsulot <br /> qo'shish
+           History
           </Title>
-          <Border />
-          <Wrapinput placeholder="Qidirish"></Wrapinput>
-          <Search />
-          <Filtered>
-            <Filter>
-              <Filtericon />
-            </Filter>
-          </Filtered>
+          {/* <Border /> */}
+          {/* <Wrapinput placeholder="Qidirish"></Wrapinput> */}
+          {/* <Search /> */}
+          {/* <Filtered> */}
+            {/* <Filter> */}
+              {/* <Filtericon /> */}
+            {/* </Filter> */}
+          {/* </Filtered> */}
         </Wrapper>
       </Container>
     </>

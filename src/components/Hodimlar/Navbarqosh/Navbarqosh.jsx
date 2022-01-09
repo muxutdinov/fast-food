@@ -17,24 +17,27 @@ import {
 } from "./Navbarqosh";
 import { HodimlarContext } from "../HodimlarContext";
 const Navbarqosh = () => {
-  const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [age, setAge] = useState("");
+  const [ism, setIsm] = useState("");
+  const [familya, setFamilya] = useState("");
+  const [lavozim, setLavozim] = useState("");
+  const [raqam, setRaqam] = useState("");
   const [data, setData] = useContext(HodimlarContext);
   const onAdd = () => {
-    if (name.length !== 0 && lastName.length !== 0 && age.length !== 0) {
+    if (ism.length !== 0 && familya.length !== 0 && lavozim.length !== 0 && raqam.length !== 0) {
       setData((prev) => [
         ...prev,
         {
           id: Date.now(),
-          lastName: lastName,
-          firstName: name,
-          age: age,
+          ism: ism,
+          familya: familya,
+          lavozim: lavozim,
+          raqam: raqam,
         },
       ]);
-      setName("");
-      setLastName("");
-      setAge("");
+      setIsm("");
+      setFamilya("");
+      setLavozim("");
+      setRaqam("");
       toast.success("Hodim muvaffaqiyatli qo'shildi!")
     }
   };
@@ -44,22 +47,26 @@ const Navbarqosh = () => {
       <Left>Left</Left>
       <Right>
         <RightWrapper>
-          <Title>Yangi mijoz qo'shish</Title>
+          <Title>Yangi hodim qo'shish</Title>
         </RightWrapper>
         <RightWrapper>
-          <Text>Mijoz ismi</Text>
-          <Input value={name} onChange={(e) => setName(e.target.value)} />
+          <Text>hodim ismi</Text>
+          <Input value={ism} onChange={(e) => setIsm(e.target.value)} />
         </RightWrapper>
         <RightWrapper>
-          <Text>Mijoz familyasi</Text>
+          <Text>hodim familyasi</Text>
           <Input
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            value={familya}
+            onChange={(e) => setFamilya(e.target.value)}
           />
         </RightWrapper>
         <RightWrapper>
-          <Text>Mijoz yoshi</Text>
-          <Input value={age} onChange={(e) => setAge(e.target.value)} />
+          <Text>hodim lavozim</Text>
+          <Input value={lavozim} onChange={(e) => setLavozim(e.target.value)} />
+        </RightWrapper>
+        <RightWrapper>
+          <Text>hodim raqami</Text>
+          <Input value={raqam} onChange={(e) => setRaqam(e.target.value)} />
         </RightWrapper>
         <Saqlashbtn onClick={onAdd}>
           <SaqlashText>Saqlash</SaqlashText>

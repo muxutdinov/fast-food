@@ -22,18 +22,18 @@ export const Navbar = () => {
     <>
       <Container>
         <Wrapper>
-          {toggle ? <Pluss /> : <Plus onClick={() => setToggle(!toggle)} />}
+          {/* {toggle ? <Pluss /> : <Plus onClick={() => setToggle(!toggle)} />} */}
           <Title>
-            Yangi maxsulot <br /> qo'shish
+            Xisobot
           </Title>
-          <Border />
+          {/* <Border />
           <Wrapinput placeholder="Qidirish"></Wrapinput>
           <Search />
           <Filtered>
             <Filter>
               <Filtericon />
             </Filter>
-          </Filtered>
+          </Filtered> */}
         </Wrapper>
       </Container>
     </>

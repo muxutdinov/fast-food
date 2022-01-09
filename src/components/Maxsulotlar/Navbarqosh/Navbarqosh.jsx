@@ -21,6 +21,7 @@ const Navbarqosh = () => {
   const [title, setTitle] = useState("");
   const [narx, setNarx] = useState("");
   const [kategorya, setKategorya] = useState("");
+  const [img, setImg] = useState("");
   const [data, setData] = useContext(Maxsulot);
   const onAdd = () => {
     if (name.length !== 0 && title.length !== 0 && narx.length !== 0) {
@@ -28,6 +29,7 @@ const Navbarqosh = () => {
         ...prev,
         {
           id: data.length + 1,
+          img:img,
           name: name,
           title: title,
           narx: narx,
@@ -38,7 +40,8 @@ const Navbarqosh = () => {
       setTitle("")
       setNarx("")
       setKategorya("")
-      toast.success("Karta muvaffaqiyatli qo'shildi!")
+      setImg('')
+      toast.success("Maxsulot muvaffaqiyatli qo'shildi!")
     }
   };
   return (
@@ -69,8 +72,8 @@ const Navbarqosh = () => {
           />
         </RightWrapper>
         <RightWrapper>
-          {/* <Text>Maxsulot rasmini yuklash</Text> */}
-          {/* <Input value={narx} onChange={(e) => setNarx(e.target.value)} /> */}
+          <Text>Maxsulot rasmini linkni joylang</Text>
+          <Input value={img} onChange={(e) => setImg(e.target.value)} />
         </RightWrapper>
         <Saqlashbtn onClick={onAdd}>
           <SaqlashText>Saqlash</SaqlashText>

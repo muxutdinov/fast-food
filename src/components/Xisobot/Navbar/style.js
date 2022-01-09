@@ -48,7 +48,7 @@ export const Pluss = styled(x)`
 export const Title = styled.pre`
   font-weight: 900;
   font-family: SFProDisplay;
-  font-size: 12px;
+  font-size: 22px;
   line-height: 16px;
   color: #2d3a45;
 `;
