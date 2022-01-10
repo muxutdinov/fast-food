@@ -11,7 +11,7 @@ import {
   Border,
 } from "./style";
 export const Body = () => {
-  const [data, setData] = useContext(Maxsulot);
+  const [data] = useContext(Maxsulot);
   return (
     <>
       <Top>

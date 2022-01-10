@@ -10,8 +10,6 @@ import {
   Title,
   Text,
   Input,
-  RightLast,
-  Saqlash,
   Saqlashbtn,
   SaqlashText,
 } from "./NavbarqoshStyle";
@@ -69,8 +67,6 @@ const Navbarqosh = () => {
           />
         </RightWrapper>
         <RightWrapper>
-          {/* <Text>Maxsulot rasmini yuklash</Text> */}
-          {/* <Input value={narx} onChange={(e) => setNarx(e.target.value)} /> */}
         </RightWrapper>
         <Saqlashbtn onClick={onAdd}>
           <SaqlashText>Saqlash</SaqlashText>

@@ -1,4 +1,3 @@
-import Generic from "../page/Generic";
 import Buyurtmalar from "../page/Buyurtmalar";
 import Xaritaa from "../page/Xarita";
 import Maxsulotlar from "../page/Maxsulotlar";

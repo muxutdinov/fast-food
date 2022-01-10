@@ -54,9 +54,10 @@ const XisobotPravider = ({children})=>{
         },
       ])
     return(
-        <XisobotCon.Provider>
+        <XisobotCon.Provider value={[data,setData]}>
            {children}
         </XisobotCon.Provider>
     )
 }
+
 export default XisobotPravider

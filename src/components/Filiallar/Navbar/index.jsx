@@ -8,15 +8,12 @@ import {
   Plus,
   Title,
   Wrapinput,
-  Wrapput,
-  Mintext,
   Search,
   Filtered,
   Filter,
   Filtericon,
   Border,
   Pluss,
-  IconWrapper,
 } from "./style";
 
 export const Navbar = () => {

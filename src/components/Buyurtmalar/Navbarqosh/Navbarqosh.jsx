@@ -9,14 +9,12 @@ import {
   Title,
   Text,
   Input,
-  RightLast,
-  Saqlash,
   Saqlashbtn,
   SaqlashText,
 } from "./Navbarqosh";
 import { BuyurtmalarContext } from "../../context/Buyurtmalar/buyurtmalar";
 const Navbarqosh = () => {
-  const notify = () => toast("Wow so easy!");
+  // const notify = () => toast("Wow so easy!");
   const [name, setName] = useState("");
   const [phone,setPhone] = useState("");
   const [age, setAge] = useState("");

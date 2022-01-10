@@ -11,8 +11,6 @@ import {
   Title,
   Text,
   Input,
-  RightLast,
-  Saqlash,
   Saqlashbtn,
   SaqlashText,
 } from "./Navbarqosh";

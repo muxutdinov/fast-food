@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Wrapper } from "./style";
+import { Container } from "./style";
 import FeaturedInfo from '../FeaturedInfo/FeaturedInfo'
 import Chart from '../Chart/Chart'
 

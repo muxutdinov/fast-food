@@ -12,8 +12,6 @@ import {
   Wraptext,
   Iconswrap,
   Icones,
-  Icontwo,
-  Iconone,
 } from "./style";
 
 export const Card = (props) => {

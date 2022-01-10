@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Wrapper } from "./style";
 import ProductCard from "../../../components/Buyurtmalar/ProductCardV";
 import { BuyurtmaContext } from "../../../components/context/Buyurtmalar/buyurtmalar";

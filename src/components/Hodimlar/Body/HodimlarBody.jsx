@@ -1,6 +1,6 @@
-import React, { useState, useContext} from "react";
+import React, { useContext} from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { ActionWrapper, Container, Editbtn } from "./HodimlarBodyStyle";
+import { ActionWrapper, Container } from "./HodimlarBodyStyle";
 import { DeleteOutline } from "@material-ui/icons";
 import { HodimlarContext } from "../HodimlarContext";
 import { ToastContainer, toast } from 'react-toastify';

@@ -10,8 +10,6 @@ import {
   Title,
   Text,
   Input,
-  RightLast,
-  Saqlash,
   Saqlashbtn,
   SaqlashText,
 } from "./NavbarqoshStyle";
@@ -42,6 +40,7 @@ const Navbarqosh = () => {
   return (
     <Container>
       <Left></Left>
+      <ToastContainer/>
       <Right>
         <RightWrapper>
           <Title>Yangi kategorya qo'shish</Title>

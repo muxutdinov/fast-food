@@ -3,7 +3,7 @@ import { Navcon } from "./style";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 export const Xarita = ({ location }) => {
-  const { isLoaded } = useJsApiLoader({
+   useJsApiLoader({
     googleMapsApiKey: "AIzaSyDqw3adF1rAFs5-n2G1Emu4Z90ce31tOto",
     id: "fast - food",
   });

@@ -8,12 +8,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   Container,
   WrapperCon,
-  Icon,
   Wraptext,
   Iconswrap,
   Icones,
-  Icontwo,
-  Iconone,
 } from "./style";
 
 export const Card = (props) => {
