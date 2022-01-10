@@ -23,10 +23,13 @@ export const Navbar = () => {
     <>
       <Container>
         <Wrapper>
-          <Plus onClick={() => setToggle(!toggle)} />
+        {
+            toggle ? <Pluss onClick={()=>setToggle(!toggle)}/>  :
+            <Plus onClick={() => setToggle(!toggle)} />
+          }
           {toggle ? <Navbarqosh /> : ""}
           <Title>
-            Yangi mijoz <br /> qo'shish
+            Yangi hodim <br /> qo'shish
           </Title>
           <Border />
           <Wrapinput placeholder="Qidirish"></Wrapinput>

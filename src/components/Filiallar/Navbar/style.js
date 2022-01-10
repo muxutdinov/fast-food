@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as filter } from "../../../assets/icons/filter.svg";
 import { ReactComponent as search } from "../../../assets/icons/search.svg";
-import { ReactComponent as x } from "../../../assets/icons/x.svg";
+import {DoNotDisturbOnOutlined} from '@mui/icons-material' 
+
 
 export const Container = styled.div`
   position: sticky;
@@ -33,13 +34,11 @@ export const Plus = styled(plus)`
   cursor: pointer;
   margin-right: 14px;
 `;
-export const Pluss = styled(x)`
+export const Pluss = styled(DoNotDisturbOnOutlined)`
   padding: 11px;
   background: #20d472;
-  /* width: 36px; */
-  /* height: 36px; */
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 46px;
+  min-height: 46px;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 14px;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbarqosh from "../Navbarqosh/Navbarqosh";
 
+
 import {
   Container,
   Wrapper,
@@ -24,7 +25,11 @@ export const Navbar = () => {
     <>
       <Container>
         <Wrapper>
-          <Plus onClick={() => setToggle(!toggle)} />
+        {
+            toggle ? <Pluss onClick={()=>setToggle(!toggle)}/>  :
+            <Plus onClick={() => setToggle(!toggle)} />
+          }
+        {toggle ? <Navbarqosh /> : ""}
           <Title>
             Yangi  filial <br /> qo'shish
           </Title>

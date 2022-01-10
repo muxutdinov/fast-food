@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as menuH } from "../../../assets/icons/menuH.svg";
 import { ReactComponent as menuV } from "../../../assets/icons/menuV.svg";
+import {DoNotDisturbOnOutlined} from '@mui/icons-material' 
+
 
 export const Container = styled.div`
   display: flex;
@@ -19,12 +21,22 @@ export const Wrapper = styled.div`
   border: 1px solid #e5e5e5;
   `;
 export const Plus = styled(plus)`
-padding: 11px;
+  padding: 11px;
   background: #20d472;
   width: 36px;
   height: 36px;
   min-width: 36px;
   min-height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 14px;
+  `;
+
+  export const Pluss = styled(DoNotDisturbOnOutlined)`
+  padding: 11px;
+  background: #20d472;
+  min-width: 46px;
+  min-height: 46px;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 14px;
