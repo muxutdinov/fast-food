@@ -20,8 +20,8 @@ export const Sidebar = () => {
       <LogoWrapper>
         <LogoWrapper.Img src={logo} alt="logo" />
         <Text>
-          <Text.Title>Fast Food</Text.Title>
-          <Text.Desc>Online maxsulot sotuvi</Text.Desc>
+          <Text.Title>Meva va sabzavotlar</Text.Title>
+          <Text.Desc>Meva va sabzavotlarni po'chta orqali jo'natish</Text.Desc>
         </Text>
       </LogoWrapper>
       <Wrapper>
