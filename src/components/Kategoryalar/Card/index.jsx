@@ -23,26 +23,7 @@ export const Card = (props) => {
     <>
       <Container>
       <ToastContainer/>
-        <WrapperCon>
-          {/* <Icon src={props.data.img} /> */}
-          <Wraptext>{props.data.nameuz}</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Wraptext>{props.data.nameru}</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Wraptext>{props.data.text}</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Wraptext>{props.data.karegorya}</Wraptext>
-        </WrapperCon>
-        <WrapperCon>
-          <Iconswrap onClick={() => onDelete(props.data.id)}>
-            <Icones>
-              <DeleteOutline className="maxsulotDelete"/>
-            </Icones>
-          </Iconswrap>
-        </WrapperCon>
+      <h3>OCR va shtrix kod orqali sifatni nazorat qilish</h3>
       </Container>
     </>
   );

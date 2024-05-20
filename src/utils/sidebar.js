@@ -35,14 +35,14 @@ export const sidebar = [
     Icon: maxsulotlar,
     hidden: false,
   },
-  // {
-  //   id: 3,
-  //   path: "/katigoriya",
-  //   title: "Katigoriya",
-  //   Component: Kategorya,
-  //   Icon: katigoriya,
-  //   hidden: false,
-  // },
+  {
+    id: 3,
+    path: "/nazorat",
+    title: "Sifat nazorati",
+    Component: Kategorya,
+    Icon: katigoriya,
+    hidden: false,
+  },
   {
     id: 4,
     path: "/filial",

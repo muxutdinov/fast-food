@@ -12,6 +12,9 @@ export const Top = styled.div`
   box-shadow: 0px 3px 6px rgba(141, 155, 168, 0.35895);
 `;
 export const Topwrapbir = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
   font-weight: 900;
   width: 60px;
   height: 13px;

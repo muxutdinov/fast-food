@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Card from "../Card/index";
 import { KategoryaCon } from "../KategoryaContext";
+import img from '../k.webp'
 import {
   Top,
   Topwrapbir,
@@ -9,22 +10,15 @@ import {
   Topwrapbesh,
   Border,
 } from "./BodyStyle";
+import { Icon } from "../Card/style";
 export const KategoryaBody = () => {
   const [data, setData] = useContext(KategoryaCon);
   return (
     <>
-      <Top>
-        <Topwrapbir>KATEGORIYA(UZ)</Topwrapbir>
-        <Border />
-        <Topwrapikki>KATEGORIYA(RU)</Topwrapikki>
-        <Border />
-        <Topwrapuch>BOSH KATEGORIYA</Topwrapuch>
-        <Border />
-        <Topwrapbesh>Delete</Topwrapbesh>
-      </Top>
-      {data.map((value) => {
-        return <Card key={value.id} data={value} />;
-      })}
+      <Card />
+      <div className="container">
+       <img src={img} alt="" />
+      </div>
     </>
   );
 };
